@@ -1,0 +1,267 @@
+#home-navigation {
+    display: block;
+    margin-top: 7px;
+    position: relative;
+    width: 100%;
+}
+    #home-navigation ul {
+        justify-content: center;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+        #home-navigation ul li {
+            border-right: 1px solid #EBA311;
+            height: 80px;       
+            width: 16.66%;
+        }
+        #home-navigation ul li:last-child {
+            border: 0;
+        }
+        #home-navigation ul li a {
+            align-items: center;
+            background: white;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: calc(100% - 2px);
+            line-height: 24px;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: none;
+            transition: .3s ease,;
+            width: calc(100% - 20px);
+        }
+        #home-navigation ul li a:hover {
+            background: #EC008C;
+            color: #FFFFFF;
+        }
+            #home-navigation ul li a span:first-child {
+                font-family: 'roboto-regular';
+                font-size: 18px;
+            }
+            #home-navigation ul li a span:last-child {
+                font-family: 'roboto-bold';
+                font-size: 22px;
+            }
+            #home-navigation ul li a:hover span:first-child {
+                transform: translateY(-3px) scale(1.1);
+            }
+            #home-navigation ul li a:hover span:last-child {
+                transform: translateY(3px) scale(1.1);
+            }
+
+
+#home-promo {
+    margin: 115px auto 0 auto;
+    width: 1364px;
+}
+    #home-promo .products .slick-list {
+        margin: 0 -38px;
+    }
+    #home-promo .products .items {
+        display: flex;
+        width: 644px;
+        margin: 0 38px;
+    }
+        #home-promo .products .items .left {
+            width: 310px;
+        }
+        #home-promo .products .items .right {
+            padding: 15px 20px 0;
+            width: calc(100% - 310px);
+        }
+            #home-promo .products .items .right .product-info {
+                border-bottom: 1px solid #707070;
+                min-height: 175px;
+                padding-bottom: 20px;
+            }
+            #home-promo .products .items .right .product-brand {
+                font-family: 'roboto-bold',sans-serif;
+                font-size: 20px;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+            #home-promo .products .items .right .product-name {
+                font-family: 'roboto-mid',sans-serif;
+                font-size: 28px;
+                line-height: 28px;
+                margin-top: 20px;
+            }
+            #home-promo .products .items .right .product-price {
+                align-items: flex-end;
+                display: flex;
+                margin-top: 20px;
+            }
+                #home-promo .products .items .right .product-price .price {
+                    color: #EC008C;
+                    font-size: 21px;
+                    line-height: 21px;
+                    margin-right: 10px;
+                }
+                #home-promo .products .items .right .product-price .off-price {
+                    color: #727272;
+                    font-size: 14px;
+                    line-height: 14px;
+                    text-decoration: line-through;
+                }
+
+            #home-promo .products .items .right .product-installment {
+                font-size: 12px;
+                margin-top: 20px;
+                line-height: normal;
+            }
+                #home-promo .products .items .right .product-installment a {
+                    color: #000000;
+                }
+                #home-promo .products .items .right .product-installment img {
+                    display: inline-block;
+                }
+            #home-promo .products .items .right .product-add-cart {
+                align-items: flex-end;
+                display: flex;                
+                justify-content: space-between;                
+                margin-top: 65px;
+            }
+    #home-promo .products .slick-dots {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 30px 0 0 0;
+        padding: 0;
+    } 
+        #home-promo .products .slick-dots .promo-dot {
+            background: #A5ABAB;
+            border: 0;
+            border-radius: 15px;
+            cursor: pointer;
+            height: 12px;
+            margin: 0 5px;
+            width: 12px;
+        }
+        #home-promo .products .slick-dots .slick-active .promo-dot {
+            background: #EC008C;
+        }
+    
+    .feat-products {
+        margin-top: 115px;
+    }
+       .feat-products.type-1 {
+           background: #FEF9F1;
+           padding: 65px 35px;
+       }
+
+.special-products {
+    margin: 115px auto 0;
+    width: 1467px;
+}
+    .special-products .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .special-products .wrapper .left{
+        width: 560px;
+        height: 660px;
+    }
+    .special-products .wrapper .left img {
+        width: 100%;
+    }
+    .special-products .wrapper .right {
+        width: 865px;
+    }
+    .special-products .wrapper .right .item {
+        display: flex;
+        box-shadow: 0 0 6px 0px rgb(0 0 0 / 15%);
+        border-radius: 10px;
+        padding: 0 30px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 458px;
+    }
+    .special-products .wrapper .right .img-holder {
+        width: 458px;
+        margin-right: 40px;
+    }
+    .special-products .wrapper .right .content {
+        display: flex;
+        width: calc(100% - 498px);
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 45px;
+    }
+    .special-products .wrapper .right .product-brand {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .special-products .wrapper .right .product-name {
+        font-family: 'roboto-bold';
+        font-size: 28px;
+        line-height: normal;
+        margin-top: 30px;
+    }
+    .special-products .wrapper .right .product-price {
+        margin-top: 65px;
+        align-items: flex-end;
+        display: flex;
+    }
+    .special-products .wrapper .right .price {
+        font-size: 34px;
+        color: #EC008C;
+        line-height: 0;
+        line-height: 34px;
+    }
+    .special-products .wrapper .right .off-price {
+        font-size: 19px;
+        color: #727272;
+        text-decoration: line-through;
+        line-height: 19px;
+    }
+    .special-products .wrapper .right .product-installment {
+        font-size: 12px;
+        margin-top: 20px;
+        line-height: normal;
+    }
+
+.news {
+    margin-top: 115px;
+}
+    .news .media-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+    .news .media-wrap .item {
+        display: block;
+        width: 435px;
+        color: #000000;
+        text-decoration: none;
+    }
+    .news .media-wrap .item .img-holder {
+        border-radius: 5px;
+    }
+    .news .media-wrap .item .title {
+        font-family: 'roboto-mid',sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .news .media-wrap .item .date {
+        font-family: 'roboto-mid',sans-serif;
+        font-size: 17px;
+        color: #A5ABAB;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+@media (max-width: 1363px) {
+    #home-promo {
+        width: 1200px;
+    }
+
+    #home-promo .products .items {
+        width: 48%;
+    }
+}
