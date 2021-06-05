@@ -159,5 +159,52 @@ $(function(){
         e.preventDefault();
         $('.cart-dropdown').toggle();
     });
+
+    // Custom Select Input
+    $('.f-select .selected .arrow').click(function(){
+        var a = $(this).closest('.f-select');
+        a.find('.down').toggle();
+        a.find('.up').toggle();
+        a.find('.lists').toggle();
+    });
+    $('.f-select .lists div').click(function(){
+        var x = $(this),
+            a = x.closest('.f-select'),
+            b = x.text(),
+            c = a.find('.selected span').text();
+
+        a.find('.down').toggle();
+        a.find('.up').toggle();
+        a.find('.lists').toggle();
+        a.find('.selected span').text(b);
+    });
+
+    // Custom Sorter Input
+    $('.f-sorter').click(function(){
+        var a = $(this);
+        a.find('.down').toggle();
+        a.find('.up').toggle();
+    });
+
+    // Custom Filter Dropdown Checkbox 
+    $('.f-filter-drop .arrow').click(function(){
+        var a = $(this).closest('.f-filter-drop');
+        a.find('.down').toggle();
+        a.find('.up').toggle();
+        a.find('.lists').toggle();
+    });
+
+    // Custom Filter Range
+    $('.f-filter-price .range input').change(function(){
+        $(this).closest('.f-filter-price').find('.price').text($(this).val());
+    });
+
+    // Custom Filter Reset
+    $('.f-reset-btn').click(function(){
+        $('.filters input').prop("checked",false);
+        $('.f-filter-price .range input').val(1000);
+        $('.f-filter-price .price').text('1000');
+    });
+
 });
 
