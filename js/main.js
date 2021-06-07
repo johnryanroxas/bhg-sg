@@ -97,6 +97,8 @@ $(function(){
         });
     });
 
+
+    // Next and Prev Arrow for Sliders
     $('.next').click(function(){
         var x = $(this);
         var parent = x.parent().parent().attr('class');
