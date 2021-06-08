@@ -202,6 +202,7 @@ $(function(){
         a.find('.down').toggle();
         a.find('.up').toggle();
         a.find('.lists').toggle();
+        a.toggleClass('active');
     });
     $('.f-select .lists div').click(function(){
         var x = $(this),
@@ -213,6 +214,17 @@ $(function(){
         a.find('.up').toggle();
         a.find('.lists').toggle();
         a.find('.selected span').text(b);
+        a.toggleClass('active');
+    });
+
+    // Custom Select Filter for Mobile
+    $('.filters-mobile-btn').click(function(){
+        var x = $(this);
+        var a = x.closest('.filters-for-mobile-wrap');
+        x.find('.down').toggle();
+        x.find('.up').toggle();
+        a.find('.filters-mobile').toggle();
+        x.toggleClass('active');
     });
 
     // Custom Sorter Input
@@ -240,6 +252,20 @@ $(function(){
         $('.filters input').prop("checked",false);
         $('.f-filter-price .range input').val(1000);
         $('.f-filter-price .price').text('1000');
+    });
+
+    // Mobile Menu {
+    $('.mobile-menu').click(function(){
+        $('.mobile-overlay').toggle();
+        $('.mobile-overlay-dropdown').toggle();
+    });
+    $('.mobile-overlay').click(function(){
+        $(this).toggle();
+        $('.mobile-overlay-dropdown').toggle();
+    });
+    $('.close-mobile-menu').click(function(){
+        $('.mobile-overlay').toggle();
+        $('.mobile-overlay-dropdown').toggle();
     });
 
 });

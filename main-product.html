@@ -14,8 +14,26 @@
 </head>
 
 <body>
+    <!-- Mobile Overlay-->
+    <div class="mobile-overlay"></div>
+    <div class="mobile-overlay-dropdown">
+        <div class="close-wrap"><button class="close-mobile-menu">X</button></div>
+        <div class="main-menu">
+            <ul>
+                <li class="parent-menu"><a href="">Beauty</a>
+                </li>
+                <li class="parent-menu"><a href="">Woman</a></li>
+                <li class="parent-menu"><a href="">Men</a></li>
+                <li class="parent-menu"><a href="">Kids</a></li>
+                <li class="parent-menu"><a href="">Home</a></li>
+                <li class="parent-menu"><a href="">Promo</a></li>
+            </ul>
+        </div>
+        <div class="footer-menu"></div>
+    </div>
+
     <!-- HEADER -->
-    <header class="main-header type-b">
+    <header class="main-header desktop type-b">
         <div class="top"></div>
         <div class="main">
             <div class="left">
@@ -537,18 +555,60 @@
         </div>
     </header>
 
+
+    <!-- HEADER MOBILE-->
+    <header class="main-header mobile">
+        <div class="main">
+            <div class="left">
+                <button class="mobile-menu"><img src="media/icons/mobile-menu.png"></button>
+                <div class="member-points">
+                    <div class="label">
+                        Members<br>
+                        Points
+                    </div>
+                    <div class="points">150</div>
+                </div>
+            </div>
+            <div class="middle">
+                <img src="media/BHG_Online_Logo-01-removebg-preview-removebg-preview_410x.png" alt="BHG Online">
+            </div>
+            <div class="right">
+                <div class="actions">
+                    <a href=""><img src="media/icons/icon-heart.png" alt="Heart"></a>
+                    <a href="" class="cart"><img src="media/icons/icon-cart.png" alt="Cart">
+                        <div class="badge">3</div>
+                    </a>
+                    <a href=""><img src="media/icons/icon-user.png" alt="My Account"></a>
+                </div>
+            </div>
+        </div>
+        <div class="main search-bar-wrap">
+            <div class="middle">
+                <form class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><img src="media/icons/icon-search.png" alt="search"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
     <div id="main-container" class="type-b">
 
         <!-- BREADCRUMB -->
         <section class="breadcrumb">HOME / WOMEN / APPAREL / PAGE 1 OF 9</section>
 
+
         <div class="wrapper-1364 main-product-page">
+
             <div class="header">
                 <h1>Apparels</h1>
                 <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip.</p>
             </div>
+
+
             <div class="navigation">
                 <ul>
                     <li><a href="">Coats & Jackets</a></li>
@@ -560,548 +620,677 @@
                     <li><a href="">Sportswear</a></li>
                 </ul>
             </div>
+
+
             <div class="box">
 
                 <!-- SIDEBAR -->
                 <div class="sidebar">
-                    <h2>Filter by:</h2>
-                    <div class="filters">
+                    <!-- <<< Filter for Desktop >>>-->
+                    <div class="filter-for-desktop">
+                        <h2>Filter by:</h2>
+                        <div class="filters">
 
-                        <!-- BRAND FILER -->
-                        <div class="f-filter-drop">
-                            <div class="head">
-                                <h3>Brands</h3>
-                                <button class="arrow down"><img src="media/icons/select-down.png"></button>
-                                <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                            <!-- BRAND FILER -->
+                            <div class="f-filter-drop">
+                                <div class="head">
+                                    <h3>Brands</h3>
+                                    <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                    <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                </div>
+                                <div class="lists">
+                                    <div class="list"><input type="checkbox"><span>FUNFIT</span></div>
+                                    <div class="list"><input type="checkbox"><span>Hedley Kepler</span></div>
+                                    <div class="list"><input type="checkbox"><span>Hush Puppies</span></div>
+                                    <div class="list"><input type="checkbox"><span>Otona Mode</span></div>
+                                    <div class="list"><input type="checkbox"><span>SBT</span></div>
+                                    <div class="list"><input type="checkbox"><span>Societe</span></div>
+                                    <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+                                    <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+                                    <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+                                </div>
                             </div>
-                            <div class="lists">
-                                <div class="list"><input type="checkbox"><span>FUNFIT</span></div>
-                                <div class="list"><input type="checkbox"><span>Hedley Kepler</span></div>
-                                <div class="list"><input type="checkbox"><span>Hush Puppies</span></div>
-                                <div class="list"><input type="checkbox"><span>Otona Mode</span></div>
-                                <div class="list"><input type="checkbox"><span>SBT</span></div>
-                                <div class="list"><input type="checkbox"><span>Societe</span></div>
-                                <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
-                                <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
-                                <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+
+                            <!-- SIZE FILTER -->
+                            <div class="f-filter-drop">
+                                <div class="head">
+                                    <h3>Size</h3>
+                                    <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                    <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                </div>
+                                <div class="lists">
+                                    <div class="list"><input type="checkbox"><span>XS</span></div>
+                                    <div class="list"><input type="checkbox"><span>S</span></div>
+                                    <div class="list"><input type="checkbox"><span>M</span></div>
+                                    <div class="list"><input type="checkbox"><span>L</span></div>
+                                    <div class="list"><input type="checkbox"><span>XL</span></div>
+                                </div>
+                            </div>
+
+                            <!-- PROMOTION -->
+                            <div class="f-filter-drop">
+                                <div class="head">
+                                    <h3>Promotion</h3>
+                                    <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                    <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                </div>
+                                <div class="lists">
+                                    <div class="list"><input type="radio" name="promotion"><span>Yes</span></div>
+                                    <div class="list"><input type="radio" name="promotion"><span>No</span></div>
+                                </div>
+                            </div>
+
+                            <!-- EXCLUSIVES -->
+                            <div class="f-filter-drop">
+                                <div class="head">
+                                    <h3>BHG Exclusives</h3>
+                                    <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                    <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                </div>
+                                <div class="lists">
+                                    <div class="list"><input type="radio" name="promotion"><span>Yes</span></div>
+                                    <div class="list"><input type="radio" name="promotion"><span>No</span></div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- SIZE FILTER -->
-                        <div class="f-filter-drop">
+
+                        <!-- PRICE -->
+                        <div class="f-filter-price">
                             <div class="head">
-                                <h3>Size</h3>
-                                <button class="arrow down"><img src="media/icons/select-down.png"></button>
-                                <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                <h3>Price</h3>
                             </div>
-                            <div class="lists">
-                                <div class="list"><input type="checkbox"><span>XS</span></div>
-                                <div class="list"><input type="checkbox"><span>S</span></div>
-                                <div class="list"><input type="checkbox"><span>M</span></div>
-                                <div class="list"><input type="checkbox"><span>L</span></div>
-                                <div class="list"><input type="checkbox"><span>XL</span></div>
+                            <div class="range">
+                                <input type="range" min="0" max="50000" value="1000" step="100">
+                            </div>
+                            <div class="label">
+                                <button class="add-cart-btn type-b">Filter</button>
+                                <div class="prices">
+                                    Price: <span class="currency">$</span><span class="price">1000</span>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- PROMOTION -->
-                        <div class="f-filter-drop">
-                            <div class="head">
-                                <h3>Promotion</h3>
+                        <!-- RESET FILTER -->
+                        <div class="f-reset">
+                            <button class="add-cart-btn type-b f-reset-btn">Reset</button>
+                        </div>
+                    </div>
+
+
+                    <!-- <<< Filter for Mobile >>>-->
+                    <div class="filter-for-mobile">
+                        <div class="filters-for-mobile-wrap">
+                            <div class="filters-mobile-btn">
+                                Filters
                                 <button class="arrow down"><img src="media/icons/select-down.png"></button>
                                 <button class="arrow up"><img src="media/icons/select-up.png"></button>
                             </div>
-                            <div class="lists">
-                                <div class="list"><input type="radio" name="promotion"><span>Yes</span></div>
-                                <div class="list"><input type="radio" name="promotion"><span>No</span></div>
+                            <div class="filters-mobile">
+                                <div class="filters">
+    
+                                    <!-- BRAND FILER -->
+                                    <div class="f-filter-drop">
+                                        <div class="head">
+                                            <h3>Brands</h3>
+                                            <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                            <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                        </div>
+                                        <div class="lists">
+                                            <div class="list"><input type="checkbox"><span>FUNFIT</span></div>
+                                            <div class="list"><input type="checkbox"><span>Hedley Kepler</span></div>
+                                            <div class="list"><input type="checkbox"><span>Hush Puppies</span></div>
+                                            <div class="list"><input type="checkbox"><span>Otona Mode</span></div>
+                                            <div class="list"><input type="checkbox"><span>SBT</span></div>
+                                            <div class="list"><input type="checkbox"><span>Societe</span></div>
+                                            <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+                                            <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+                                            <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+                                        </div>
+                                    </div>
+        
+                                    <!-- SIZE FILTER -->
+                                    <div class="f-filter-drop">
+                                        <div class="head">
+                                            <h3>Size</h3>
+                                            <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                            <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                        </div>
+                                        <div class="lists">
+                                            <div class="list"><input type="checkbox"><span>XS</span></div>
+                                            <div class="list"><input type="checkbox"><span>S</span></div>
+                                            <div class="list"><input type="checkbox"><span>M</span></div>
+                                            <div class="list"><input type="checkbox"><span>L</span></div>
+                                            <div class="list"><input type="checkbox"><span>XL</span></div>
+                                        </div>
+                                    </div>
+        
+                                    <!-- PROMOTION -->
+                                    <div class="f-filter-drop">
+                                        <div class="head">
+                                            <h3>Promotion</h3>
+                                            <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                            <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                        </div>
+                                        <div class="lists">
+                                            <div class="list"><input type="radio" name="promotion"><span>Yes</span></div>
+                                            <div class="list"><input type="radio" name="promotion"><span>No</span></div>
+                                        </div>
+                                    </div>
+        
+                                    <!-- EXCLUSIVES -->
+                                    <div class="f-filter-drop">
+                                        <div class="head">
+                                            <h3>BHG Exclusives</h3>
+                                            <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                            <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                        </div>
+                                        <div class="lists">
+                                            <div class="list"><input type="radio" name="promotion"><span>Yes</span></div>
+                                            <div class="list"><input type="radio" name="promotion"><span>No</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+        
+                                <!-- PRICE -->
+                                <div class="f-filter-price">
+                                    <div class="head">
+                                        <h3>Price</h3>
+                                    </div>
+                                    <div class="range">
+                                        <input type="range" min="0" max="50000" value="1000" step="100">
+                                    </div>
+                                    <div class="label">
+                                        <button class="add-cart-btn type-b">Filter</button>
+                                        <div class="prices">
+                                            Price: <span class="currency">$</span><span class="price">1000</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- RESET FILTER -->
+                                <div class="f-reset">
+                                    <button class="add-cart-btn type-b f-reset-btn">Reset</button>
+                                </div>
                             </div>
                         </div>
-
-                        <!-- EXCLUSIVES -->
-                        <div class="f-filter-drop">
-                            <div class="head">
-                                <h3>BHG Exclusives</h3>
+                        <div class="f-select">
+                            <div class="selected">
+                                Sort By : <span>Product Name</span>
                                 <button class="arrow down"><img src="media/icons/select-down.png"></button>
                                 <button class="arrow up"><img src="media/icons/select-up.png"></button>
                             </div>
                             <div class="lists">
-                                <div class="list"><input type="radio" name="promotion"><span>Yes</span></div>
-                                <div class="list"><input type="radio" name="promotion"><span>No</span></div>
+                                <div>Top Sellers</div>
+                                <div>New Arrivals</div>
+                                <div>Product Name</div>
+                                <div>Price</div>
                             </div>
                         </div>
                     </div>
 
 
-                    <!-- PRICE -->
-                    <div class="f-filter-price">
-                        <div class="head">
-                            <h3>Price</h3>
-                        </div>
-                        <div class="range">
-                            <input type="range" min="0" max="50000" value="1000" step="100">
-                        </div>
-                        <div class="label">
-                            <button class="add-cart-btn type-b">Filter</button>
-                            <div class="prices">
-                                Price: <span class="currency">$</span><span class="price">1000</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- RESET FILTER -->
-                    <div class="f-reset">
-                        <button class="add-cart-btn type-b f-reset-btn">Reset</button>
-                    </div>
                 </div>
 
-                    <!-- MAIN -->
-                    <div class="main">
-                        <div class="search-filter">
-                            <div class="search">
-                                <input type="text">
-                                <button><img src="media/icons/search.png"></button>
+
+                <div class="main">
+                    <div class="search-filter">
+                        <div class="search">
+                            <input type="text">
+                            <button><img src="media/icons/search.png"></button>
+                        </div>
+                        <div class="f-select">
+                            <div class="selected">
+                                Sort By : <span>Product Name</span>
+                                <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                <button class="arrow up"><img src="media/icons/select-up.png"></button>
                             </div>
-                            <div class="f-select">
-                                <div class="selected">
-                                    Sort By : <span>Product Name</span>
-                                    <button class="arrow down"><img src="media/icons/select-down.png"></button>
-                                    <button class="arrow up"><img src="media/icons/select-up.png"></button>
-                                </div>
-                                <div class="lists">
-                                    <div>Top Sellers</div>
-                                    <div>New Arrivals</div>
-                                    <div>Product Name</div>
-                                    <div>Price</div>
-                                </div>
-                            </div>
-                            <button class="f-sorter">
-                                <img src="media/icons/sort-down.png" class="down">
-                                <img src="media/icons/sort-up.png" class="up">
-                            </button>
-                            <div class="f-select">
-                                <div class="selected">
-                                    Show <span>12 Products</span>
-                                    <button class="arrow down"><img src="media/icons/select-down.png"></button>
-                                    <button class="arrow up"><img src="media/icons/select-up.png"></button>
-                                </div>
-                                <div class="lists">
-                                    <div>Show <span>12 Products</span></div>
-                                    <div>Show <span>24 Products</span></div>
-                                    <div>Show <span>36 Products</span></div>
-                                    <div>Show <span>42 Products</span></div>
-                                </div>
+                            <div class="lists">
+                                <div>Top Sellers</div>
+                                <div>New Arrivals</div>
+                                <div>Product Name</div>
+                                <div>Price</div>
                             </div>
                         </div>
-                        <div class="products">
-                            <div class="item">
-                                <div class="item-hover-overlay"></div>
-                                <div class="img-holder">
-                                    <img src="media/dress-0.png" class="front">
-                                    <img src="media/dress-1.png" class="hover">
-                                </div>
-                                <div class="content">
-                                    <div class="title">Lorem Ipsum</div>
-                                    <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
-                                    <div class="product-price">
-                                        <div class="price"><span class="currency">$</span>16.88</div>
-                                        <div class="off-price"><span class="currency">$</span>39.90</div>
-                                    </div>
-                                </div>
-                                <div class="spacer"></div>
-                                <div class="product-add-cart type-b">
-                                    <div class="quantity-input type-b">
-                                        <div class="q-input">
-                                            <button class="q-minus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                            <input class="q-input-num" type="text" value="1" tabindex="0">
-                                            <button class="q-plus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                        </div>
-                                    </div>
-                                    <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
-                                    <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
-                                </div>
+                        <button class="f-sorter">
+                            <img src="media/icons/sort-down.png" class="down">
+                            <img src="media/icons/sort-up.png" class="up">
+                        </button>
+                        <div class="f-select">
+                            <div class="selected">
+                                Show <span>12 Products</span>
+                                <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                <button class="arrow up"><img src="media/icons/select-up.png"></button>
                             </div>
-
-
-                            <div class="item">
-                                <div class="item-hover-overlay"></div>
-                                <div class="img-holder">
-                                    <img src="media/dress-0.png" class="front">
-                                    <img src="media/dress-1.png" class="hover">
-                                    <div class="badge">
-                                        <ul>
-                                            <li class="sold">Sold Out</li>
-                                            <li class="new">New</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="title">Lorem Ipsum</div>
-                                    <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
-                                    <div class="product-price">
-                                        <div class="price"><span class="currency">$</span>16.88</div>
-                                        <div class="off-price"><span class="currency">$</span>39.90</div>
-                                    </div>
-                                </div>
-                                <div class="spacer"></div>
-                                <div class="product-add-cart type-b">
-                                    <div class="quantity-input type-b">
-                                        <div class="q-input">
-                                            <button class="q-minus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                            <input class="q-input-num" type="text" value="1" tabindex="0">
-                                            <button class="q-plus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                        </div>
-                                    </div>
-                                    <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
-                                    <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="item-hover-overlay"></div>
-                                <div class="img-holder">
-                                    <img src="media/dress-0.png" class="front">
-                                    <img src="media/dress-1.png" class="hover">
-                                    <div class="badge">
-                                        <ul>
-                                            <li class="new">New</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="title">Lorem Ipsum</div>
-                                    <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
-                                    <div class="product-price">
-                                        <div class="price"><span class="currency">$</span>16.88</div>
-                                        <div class="off-price"><span class="currency">$</span>39.90</div>
-                                    </div>
-                                </div>
-                                <div class="spacer"></div>
-                                <div class="product-add-cart type-b">
-                                    <div class="quantity-input type-b">
-                                        <div class="q-input">
-                                            <button class="q-minus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                            <input class="q-input-num" type="text" value="1" tabindex="0">
-                                            <button class="q-plus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                        </div>
-                                    </div>
-                                    <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
-                                    <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="item-hover-overlay"></div>
-                                <div class="img-holder">
-                                    <img src="media/dress-0.png" class="front">
-                                    <img src="media/dress-1.png" class="hover">
-                                    <div class="badge">
-                                        <ul>
-                                            <li class="sale">Sale</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="title">Lorem Ipsum</div>
-                                    <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
-                                    <div class="product-price">
-                                        <div class="price"><span class="currency">$</span>16.88</div>
-                                        <div class="off-price"><span class="currency">$</span>39.90</div>
-                                    </div>
-                                </div>
-                                <div class="spacer"></div>
-                                <div class="product-add-cart type-b">
-                                    <div class="quantity-input type-b">
-                                        <div class="q-input">
-                                            <button class="q-minus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                            <input class="q-input-num" type="text" value="1" tabindex="0">
-                                            <button class="q-plus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                        </div>
-                                    </div>
-                                    <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
-                                    <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="item-hover-overlay"></div>
-                                <div class="img-holder">
-                                    <img src="media/dress-0.png" class="front">
-                                    <img src="media/dress-1.png" class="hover">
-                                </div>
-                                <div class="content">
-                                    <div class="title">Lorem Ipsum</div>
-                                    <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
-                                    <div class="product-price">
-                                        <div class="price"><span class="currency">$</span>16.88</div>
-                                        <div class="off-price"><span class="currency">$</span>39.90</div>
-                                    </div>
-                                </div>
-                                <div class="spacer"></div>
-                                <div class="product-add-cart type-b">
-                                    <div class="quantity-input type-b">
-                                        <div class="q-input">
-                                            <button class="q-minus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                            <input class="q-input-num" type="text" value="1" tabindex="0">
-                                            <button class="q-plus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                        </div>
-                                    </div>
-                                    <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
-                                    <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="item-hover-overlay"></div>
-                                <div class="img-holder">
-                                    <img src="media/dress-0.png" class="front">
-                                    <img src="media/dress-1.png" class="hover">
-                                </div>
-                                <div class="content">
-                                    <div class="title">Lorem Ipsum</div>
-                                    <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
-                                    <div class="product-price">
-                                        <div class="price"><span class="currency">$</span>16.88</div>
-                                        <div class="off-price"><span class="currency">$</span>39.90</div>
-                                    </div>
-                                </div>
-                                <div class="spacer"></div>
-                                <div class="product-add-cart type-b">
-                                    <div class="quantity-input type-b">
-                                        <div class="q-input">
-                                            <button class="q-minus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                            <input class="q-input-num" type="text" value="1" tabindex="0">
-                                            <button class="q-plus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                        </div>
-                                    </div>
-                                    <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
-                                    <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="item-hover-overlay"></div>
-                                <div class="img-holder">
-                                    <img src="media/dress-0.png" class="front">
-                                    <img src="media/dress-1.png" class="hover">
-                                </div>
-                                <div class="content">
-                                    <div class="title">Lorem Ipsum</div>
-                                    <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
-                                    <div class="product-price">
-                                        <div class="price"><span class="currency">$</span>16.88</div>
-                                        <div class="off-price"><span class="currency">$</span>39.90</div>
-                                    </div>
-                                </div>
-                                <div class="spacer"></div>
-                                <div class="product-add-cart type-b">
-                                    <div class="quantity-input type-b">
-                                        <div class="q-input">
-                                            <button class="q-minus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                            <input class="q-input-num" type="text" value="1" tabindex="0">
-                                            <button class="q-plus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                        </div>
-                                    </div>
-                                    <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
-                                    <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="item-hover-overlay"></div>
-                                <div class="img-holder">
-                                    <img src="media/dress-0.png" class="front">
-                                    <img src="media/dress-1.png" class="hover">
-                                </div>
-                                <div class="content">
-                                    <div class="title">Lorem Ipsum</div>
-                                    <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
-                                    <div class="product-price">
-                                        <div class="price"><span class="currency">$</span>16.88</div>
-                                        <div class="off-price"><span class="currency">$</span>39.90</div>
-                                    </div>
-                                </div>
-                                <div class="spacer"></div>
-                                <div class="product-add-cart type-b">
-                                    <div class="quantity-input type-b">
-                                        <div class="q-input">
-                                            <button class="q-minus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                            <input class="q-input-num" type="text" value="1" tabindex="0">
-                                            <button class="q-plus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                        </div>
-                                    </div>
-                                    <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
-                                    <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="item-hover-overlay"></div>
-                                <div class="img-holder">
-                                    <img src="media/dress-0.png" class="front">
-                                    <img src="media/dress-1.png" class="hover">
-                                </div>
-                                <div class="content">
-                                    <div class="title">Lorem Ipsum</div>
-                                    <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
-                                    <div class="product-price">
-                                        <div class="price"><span class="currency">$</span>16.88</div>
-                                        <div class="off-price"><span class="currency">$</span>39.90</div>
-                                    </div>
-                                </div>
-                                <div class="spacer"></div>
-                                <div class="product-add-cart type-b">
-                                    <div class="quantity-input type-b">
-                                        <div class="q-input">
-                                            <button class="q-minus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                            <input class="q-input-num" type="text" value="1" tabindex="0">
-                                            <button class="q-plus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                        </div>
-                                    </div>
-                                    <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
-                                    <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="item-hover-overlay"></div>
-                                <div class="img-holder">
-                                    <img src="media/dress-0.png" class="front">
-                                    <img src="media/dress-1.png" class="hover">
-                                </div>
-                                <div class="content">
-                                    <div class="title">Lorem Ipsum</div>
-                                    <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
-                                    <div class="product-price">
-                                        <div class="price"><span class="currency">$</span>16.88</div>
-                                        <div class="off-price"><span class="currency">$</span>39.90</div>
-                                    </div>
-                                </div>
-                                <div class="spacer"></div>
-                                <div class="product-add-cart type-b">
-                                    <div class="quantity-input type-b">
-                                        <div class="q-input">
-                                            <button class="q-minus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                            <input class="q-input-num" type="text" value="1" tabindex="0">
-                                            <button class="q-plus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                        </div>
-                                    </div>
-                                    <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
-                                    <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="item-hover-overlay"></div>
-                                <div class="img-holder">
-                                    <img src="media/dress-0.png" class="front">
-                                    <img src="media/dress-1.png" class="hover">
-                                </div>
-                                <div class="content">
-                                    <div class="title">Lorem Ipsum</div>
-                                    <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
-                                    <div class="product-price">
-                                        <div class="price"><span class="currency">$</span>16.88</div>
-                                        <div class="off-price"><span class="currency">$</span>39.90</div>
-                                    </div>
-                                </div>
-                                <div class="spacer"></div>
-                                <div class="product-add-cart type-b">
-                                    <div class="quantity-input type-b">
-                                        <div class="q-input">
-                                            <button class="q-minus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                            <input class="q-input-num" type="text" value="1" tabindex="0">
-                                            <button class="q-plus" type="button" tabindex="0"><img
-                                                    src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                        </div>
-                                    </div>
-                                    <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
-                                    <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
-                                </div>
+                            <div class="lists">
+                                <div>Show <span>12 Products</span></div>
+                                <div>Show <span>24 Products</span></div>
+                                <div>Show <span>36 Products</span></div>
+                                <div>Show <span>42 Products</span></div>
                             </div>
                         </div>
+                    </div>
+                    <div class="products">
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                                <div class="badge">
+                                    <ul>
+                                        <li class="sold">Sold Out</li>
+                                        <li class="new">New</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                                <div class="badge">
+                                    <ul>
+                                        <li class="new">New</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                                <div class="badge">
+                                    <ul>
+                                        <li class="sale">Sale</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrows-with-pagination">
+                        <button class="prev" tabindex="0"><img src="media/icons/paging-left-arrow.png" alt="preve"></button>
+                        <div class="paging"><ul class="slick-dots" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control170" aria-controls="slick-slide170" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control171" aria-controls="slick-slide171" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control172" aria-controls="slick-slide172" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
+                        <button class="next" tabindex="0"><img src="media/icons/paging-right-arrow.png" alt="preve"></button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- FOOTER -->
-        <footer id="main-footer">
-            <div class="container">
-                <div class="left">
-                    <a href="" class="logo"><img src="media/footer-logo.png" alt="BHG"></a>
-                    <div class="social-media">
-                        <a href="#"><img src="media/icons/social-fb.png" alt="facebook"></a>
-                        <a href="#"><img src="media/icons/social-ig.png" alt="instagram"></a>
-                        <a href="#"><img src="media/icons/social-in.png" alt="linkedin"></a>
-                    </div>
-                    <div class="copyright">© 2021 BHG Singapore | All rights reserved.</div>
+
+    <!-- FOOTER -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="left">
+                <a href="" class="logo"><img src="media/BHG_Online_Logo-01-removebg-preview-removebg-preview_410x.png"
+                        alt="BHG"></a>
+                <div class="social-media">
+                    <a href="#"><img src="media/icons/social-fb.png" alt="facebook"></a>
+                    <a href="#"><img src="media/icons/social-ig.png" alt="instagram"></a>
+                    <a href="#"><img src="media/icons/social-in.png" alt="linkedin"></a>
                 </div>
-                <div class="right">
-                    <div class="top">
-                        <div class="link">
-                            <div class="title">Customer Service</div>
-                            <ul>
-                                <li><a href="#">Find Us</a></li>
-                                <li><a href="#">Store Service</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </div>
-                        <div class="link">
-                            <div class="title">Corporate</div>
-                            <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <div class="link">
-                            <div class="title">Legal</div>
-                            <ul>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                            </ul>
+                <div class="copyright desktop">© 2021 BHG Singapore | All rights reserved.</div>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <div class="link">
+                        <div class="title">Customer Service</div>
+                        <ul>
+                            <li><a href="#">Find Us</a></li>
+                            <li><a href="#">Store Service</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="link">
+                        <div class="title">Corporate</div>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="link">
+                        <div class="title">Legal</div>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="widget widget-1">
+                        <div class="title">Endless Perks at Your Finger Tips! Enjoy our App!</div>
+                        <div class="cards">
+                            <a href=""><img src="media/icons/app-store.png" alt="App Store"></a>
+                            <a href=""><img src="media/icons/google-play.png" alt="Google Play"></a>
                         </div>
                     </div>
-                    <div class="bottom">
-                        <div class="widget widget-1">
-                            <div class="title">Endless Perks at Your Finger Tips! Enjoy our App!</div>
-                            <div class="cards">
-                                <a href=""><img src="media/icons/app-store.png" alt="App Store"></a>
-                                <a href=""><img src="media/icons/google-play.png" alt="Google Play"></a>
-                            </div>
-                        </div>
-                        <div class="widget widget-2">
-                            <div class="title">Payments secured by Adyen</div>
-                            <div class="cards">
-                                <img src="media/icons/card-amex.png" alt="AMEX">
-                                <img src="media/icons/card-mastercard.png" alt="Mastercard">
-                                <img src="media/icons/card-visa.png" alt="Visa">
-                            </div>
+                    <div class="widget widget-2">
+                        <div class="title">Payments secured by Adyen</div>
+                        <div class="cards">
+                            <img src="media/icons/card-amex.png" alt="AMEX">
+                            <img src="media/icons/card-mastercard.png" alt="Mastercard">
+                            <img src="media/icons/card-visa.png" alt="Visa">
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div class="copyright mobile">© 2021 BHG Singapore | All rights reserved.</div>
+        </div>
+    </footer>
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/slick.min.js"></script>

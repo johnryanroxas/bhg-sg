@@ -273,3 +273,190 @@
     border-bottom: 1px solid transparent;
     border-left: 1px solid transparent;
 } */
+
+.main-product-page .filter-for-mobile {
+    display: none;
+    justify-content: space-between;
+}
+
+.main-product-page .filters-for-mobile-wrap {
+    width: 48%;
+}
+
+.main-product-page .filters-for-mobile-wrap .filters-mobile {
+    display: none;
+    width: calc(100vw - 30px);
+    border: 1px solid #000000;
+    margin-top: -1px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    z-index: 100;
+    background: #FFFFFF;
+}
+
+.main-product-page .filters-mobile-btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #707070;
+    line-height: 40px;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.main-product-page .filters-mobile-btn .arrow {
+    display: block;
+    cursor: pointer;
+    width: 15px;
+    height: 9px;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    line-height: 0;
+}
+
+.main-product-page .arrow.up {
+    display: none;
+}
+
+.main-product-page .filters-mobile {
+    display: none;
+}
+
+
+@media (max-width: 1363px){
+    .breadcrumb {
+        width: 100%;
+    }
+
+    .main-product-page .main .products .item .img-holder {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-product-page .main .products .item {
+        width: 96%;
+    }
+
+    .main-product-page .main {
+        width: 80%;
+    }
+
+    .main-product-page .sidebar {
+        width: 16%;
+    }
+}
+
+@media (max-width: 1280px) {
+    
+}
+
+@media (max-width: 799px) {
+    .main-product-page .header {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .breadcrumb {
+        display: none;
+    }
+    .main-product-page {
+        margin-top: 50px;
+    }
+
+    .main-product-page .header p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .main-product-page .navigation {
+        display: none;
+    }
+
+    .main-product-page .box {
+        display: block;
+    }
+    .main-product-page .sidebar {
+        width: 100%;
+    }
+    .main-product-page .filter-for-mobile{
+        display: flex;
+    }
+    .main-product-page .filter-for-desktop {
+        display: none;
+    }
+    .main-product-page .main {
+        width: 100%;
+    }
+    .main-product-page .main .products {
+        grid-template-columns: auto auto;
+        justify-items: center;
+    }
+    .main-product-page .main .products .item {
+        width: 95%;
+    }
+    .main-product-page .main .products .item .product-add-cart.type-b {
+        position: relative;
+        display: flex;
+    }
+    .main-product-page .main .products .item .spacer {
+        display: none;
+    }
+    .main-product-page .main .products .item .content .title {
+        font-size: 14px;
+    }
+
+    .main-product-page .main .products .item .content {
+        padding: 20px 10px 60px;
+    }
+
+    .main-product-page .main .products .item .content .description {
+        font-size: 14px;
+    }
+    .main-product-page .main .products .item .content .price {
+        font-size: 17px;
+        width: 95%;
+    }
+    .main-product-page .main .products .item .content .off-price {
+        font-size: 14px;
+    }
+    .main-product-page .main .products .item .product-add-cart.type-b {
+        left: 0;
+        bottom: 60px;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .main-product-page .main .products .item:hover .item-hover-overlay {
+        display: none;
+    }
+
+    .main-product-page .main .product-add-cart.type-b > button {
+        margin-left: 0;
+    }
+    .main-product-page .main .search-filter {
+        display: none;
+    }
+
+    .main-product-page .filter-for-mobile .f-select {
+        width: 48%;
+        overflow: hidden;
+        font-size: 14px;
+    }
+    
+    .main-product-page .filter-for-mobile .f-select.active {
+        overflow: visible;
+    }
+    
+    .main-product-page .filter-for-mobile .f-select .lists {
+        width: 100%;
+    }
+}
