@@ -42,6 +42,7 @@
             #home-navigation ul li a span:first-child {
                 font-family: 'roboto-regular';
                 font-size: 18px;
+                text-align: center;
             }
             #home-navigation ul li a span:last-child {
                 font-family: 'roboto-bold';
@@ -161,6 +162,7 @@
     .special-products .wrapper {
         display: flex;
         justify-content: space-between;
+        padding-top: 10px;
     }
     .special-products .wrapper .left{
         width: 560px;
@@ -255,7 +257,16 @@
         margin-top: 20px;
         text-align: center;
     }
-
+@media (max-width: 1787px) {
+    .news .media-wrap .item {
+        width: 24%;
+    }
+}
+@media (max-width: 1466px) {
+    .special-products {
+        width: 92%;
+    }
+}
 @media (max-width: 1363px) {
     #home-promo {
         width: 1200px;
@@ -263,5 +274,163 @@
 
     #home-promo .products .items {
         width: 48%;
+    }
+}
+
+@media (max-width: 1362px) {
+    #home-promo {
+        width: 92%;
+        box-sizing: border-box;
+    }
+
+    #home-promo .products .items {
+        justify-content: space-between;
+    }
+
+    #home-promo .products .items .left {
+        width: 45%;
+    }
+
+    #home-promo .products .items .right {
+        width: calc(100% - 45%);
+    }
+
+    .add-cart-btn {
+        width: 96px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .special-products .wrapper .left {
+        width: 35%;
+        height: auto;
+    }
+
+    .special-products .wrapper .right {
+        width: calc(100% - 38%);
+    }
+
+    .special-products .wrapper .right .item {
+        width: 99%;
+        justify-content: space-between;
+    }
+
+    .special-products .wrapper .right .img-holder {
+        width: 48%;
+        margin-right: 0;
+    }
+
+    .special-products .wrapper .right .content {
+        width: 48%;
+    }
+
+    .special-products .wrapper .right .product-installment img {
+        display: inline-block !important;
+    }
+}
+
+@media (max-width: 1055px) {
+    #home-navigation ul li a {
+        line-height: 20px;
+    }
+
+    #home-navigation ul li a span:first-child {
+        font-size: 14px;
+    }
+
+    #home-navigation ul li a span:last-child {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 959px) {
+    #home-promo .products .items {
+        width: 100%;
+        display: block;
+    }
+
+    #home-promo .products .items .left {
+        width: 100%;
+    }
+    #home-promo .products .slick-slide img {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #home-promo .products .items .right {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .special-products .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .special-products .wrapper .left {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .special-products .wrapper .right {
+        width: 99%;
+        margin: 20px auto 0;
+    }
+    .special-products .wrapper .right .item {
+        height: auto;
+    }
+    .special-products .wrapper .right .product-name {
+        margin-top: 20px;
+    }
+    .special-products .wrapper .right .product-price {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    #home-navigation {
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+    #home-navigation ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #home-navigation ul li,
+    #home-navigation ul li:last-child {
+        border: 1px solid #000000;
+        height: 60px;
+        width: 48%;
+        margin-bottom: 10px;
+    }
+
+    #home-promo {
+        width: 80%;
+    }
+
+    .feat-products.type-1,
+    .feat-products.type-2 {
+        padding: 65px 10%;
+    }
+
+    .news .media-wrap {
+        flex-wrap: wrap;
+    }
+    .news .media-wrap .item {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .news .media-wrap .item .title {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .news .media-wrap .item .date {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .news .header-with-center-cirle {
+        padding-left: 35px;
+        padding-right: 35px;
     }
 }

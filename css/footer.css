@@ -10,6 +10,7 @@
         width: 1420px;
         margin: 0 auto;
         display: flex;
+        justify-content: space-between;
     }
     #main-footer .left {
         width: 500px;
@@ -26,6 +27,9 @@
     #main-footer .copyright {
         margin-top: 45px;
         color: #FFFFFF;
+    }
+    #main-footer .copyright.mobile {
+        display: none
     }
     #main-footer .link {
         color: #FFFFFF;
@@ -85,3 +89,93 @@
         padding-right: 5px;
         padding-left: 5px;
     }
+
+@media (max-width: 1419px) {
+    #main-footer .container {
+        width: 100%;
+        padding-right: 35px;
+        padding-left: 35px;
+        box-sizing: border-box;
+    }
+
+    #main-footer .left {
+        width: 30%;
+    }
+
+    #main-footer .right {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #main-footer .right {
+        width: 69%;
+    }
+}
+
+@media (max-width: 959px) {
+    #main-footer .container {
+        display: block;
+    }
+
+    #main-footer .left {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #main-footer .copyright.desktop {
+        display: none;
+    }
+
+    #main-footer .copyright.mobile {
+        display: block;
+        text-align: center;
+    }
+
+    #main-footer .left .logo {
+        width: 40%;
+    }
+
+    #main-footer .social-media {
+        width: 54%;
+        margin-top: 0;
+    }
+
+    #main-footer .right {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #main-footer .top .title {
+        min-height: 50px;
+    }
+
+    #main-footer .top {
+        justify-content: flex-start;
+    }
+
+    #main-footer .bottom {
+        flex-wrap: wrap;
+    }
+
+    #main-footer .bottom .widget-1 {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #main-footer .bottom .widget-2 {
+        width: 100%;
+        margin-left: 0;
+        display: block;
+        order: 1;
+        text-align: center;
+    }
+
+    #main-footer .link a {
+        font-size: 14px;
+    }
+}

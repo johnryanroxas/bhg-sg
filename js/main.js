@@ -24,6 +24,32 @@ $(function(){
         dots: true,
         slidesToShow: 2,
         slidesToScroll: 2,
+        responsive: [
+            {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }],
+    });
+
+    // Special Promo Slider Small
+    $('.s-items').slick({
+        arrows: false,
+        autoplay: false,
+        autoplaySpeed: 7000,
+        dots: false,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        responsive: [
+            {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+            }
+        }],
     });
 
     // Quantity input to accept number only
@@ -94,7 +120,35 @@ $(function(){
             dots: false,
             slidesToShow: 4,
             slidesToScroll: 4,
+            responsive: [
+                {
+                breakpoint: 959,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        
+            ],
         });
+    });
+
+    // Special Promo Sliders
+
+    $('.special-promo-slider').slick({
+        arrows: false,
+        autoplay: false,
+        autoplaySpeed: 7000,
+        dots: true,
+        appendDots: $('.paging'),
+        slidesToShow: 1,
+        slidesToScroll: 1,
     });
 
 
@@ -130,26 +184,6 @@ $(function(){
             c = x.closest('.items-slider').find('.s-items');
             $(c).slick('slickPrev');
         }
-    });
-
-    // Special Promo Slider Small
-    $('.s-items').slick({
-        arrows: false,
-        autoplay: false,
-        autoplaySpeed: 7000,
-        dots: false,
-        slidesToShow: 6,
-        slidesToScroll: 6,
-    });
-
-    $('.special-promo-slider').slick({
-        arrows: false,
-        autoplay: false,
-        autoplaySpeed: 7000,
-        dots: true,
-        appendDots: $('.paging'),
-        slidesToShow: 1,
-        slidesToScroll: 1,
     });
 
     // Dropdown Cart

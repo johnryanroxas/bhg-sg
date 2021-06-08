@@ -1,4 +1,8 @@
-#main-header {
+.main-header.mobile {
+    display: none;
+}
+
+.main-header {
     background: #FFFFFF;
     box-shadow: 0 0 6px 3px rgb(0 0 0 / 16%);
     left: 0;
@@ -7,32 +11,32 @@
     width: 100%;
     z-index: 999;    
 }
-    #main-header .top {
+    .main-header .top {
         background-color: #F6F6F6;
         height: 32px;
         width: 100%;        
     }
-    #main-header .main {
+    .main-header .main {
         display: flex;
         height: 100px;
         margin-left: auto;
         margin-right: auto;
         width: 1364px;      
     }
-        #main-header .main .left {
+        .main-header .main .left {
             width: 244px;
         }
-        #main-header .main .middle {
+        .main-header .main .middle {
             width: 850px;
         }
-            #main-header .main .middle .search-bar {
+            .main-header .main .middle .search-bar {
                 display: flex;
                 margin-top: 20px;
                 width: 100%;
                 height: 33px;
             }
 
-                #main-header .main .middle .search-bar input {
+                .main-header .main .middle .search-bar input {
                     background: #E8E8E8;
                     border: 0;
                     border-radius: 5px 0 0 5px;
@@ -41,10 +45,10 @@
                     padding: 0 20px;
                     width: calc(100% - 38px);
                 }
-                    #main-header .main .middle .search-bar input:focus {
+                    .main-header .main .middle .search-bar input:focus {
                         outline: 0;
                     }
-                #main-header .main .middle .search-bar button {
+                .main-header .main .middle .search-bar button {
                     align-items: center;
                     background: #EC008C;
                     border: 0;
@@ -56,48 +60,48 @@
                     padding: 0;
                     width: 38px;
                 }
-            #main-header .main .middle .menu {
+            .main-header .main .middle .menu {
                 margin-top: 18px;
             }
-                #main-header .main .middle .menu ul {
+                .main-header .main .middle .menu ul {
                     display: flex;
                     list-style: none;
                     margin: 0;
                     padding: 0;               
                 }
-                    #main-header .main .middle .menu ul li {
+                    .main-header .main .middle .menu ul li {
                         margin-right: 36px;
                     }
-                        #main-header .main .middle .menu ul li a {
+                        .main-header .main .middle .menu ul li a {
                             color: #000000;
                             font-size: 16px;
                             text-decoration: none;
                             
                         }
-                        #main-header .main .middle .menu ul li a:hover {
+                        .main-header .main .middle .menu ul li a:hover {
                             color: #EC008C;
                         }
-        #main-header .main .right {
+        .main-header .main .right {
             padding-left: 40px;
             width: 270px;
         }
-            #main-header .main .right .actions {
+            .main-header .main .actions {
                 align-items: center;
                 display: flex;
                 justify-content: space-between;
                 margin-top: 25px;
                 position: relative;
             }
-                #main-header .main .right .actions a {
+                .main-header .main .actions a {
                     display: block;
                     line-height: 0;                    
                     margin: 0;
                     padding: 0;
                 }
-                #main-header .main .right .actions a.cart {
+                .main-header .main .actions a.cart {
                     position: relative;
                 }
-                    #main-header .main .right .actions a.cart .badge{
+                    .main-header .main .actions a.cart .badge{
                         background: #EC008C;
                         border: 1px solid #FFFFFF;
                         border-radius: 20px;
@@ -112,79 +116,79 @@
                         top:-6px;
                         width: 17px;
                     }
-                #main-header .main .right .member-points {
+                .main-header .main .member-points {
                     align-items: center;
                     display: flex;
                     justify-content: center;
                 } 
-                    #main-header .main .right .member-points .label {
+                    .main-header .main .member-points .label {
                         font-size: 12px;
                         line-height: 14px;
                         text-align: right;
                     }
-                    #main-header .main .right .member-points .points {
+                    .main-header .main .member-points .points {
                         font-family: 'roboto-bold';
                         font-size: 18px;
                         line-height: normal;
                         padding-left: 10px;
                     }
-            #main-header .main .right .greet {
+            .main-header .main .greet {
                 font-size: 16px;
                 margin-left: 2px;
                 margin-top: 18px;
             }
-                #main-header .main .right .greet span {
+                .main-header .main .greet span {
                     font-family: 'roboto-bold';
                 }
 
 /* TYPE B Header */
-#main-header.type-b .main .middle {
+.main-header.type-b .main .middle {
     width: 750px;
 }
-#main-header.type-b .main .middle .menu .parent-menu:hover > a {
+.main-header.type-b .main .middle .menu .parent-menu:hover > a {
     color: #EC008C;
 }
-#main-header.type-b .main .middle .menu .parent-menu:hover .sub-menu {
+.main-header.type-b .main .middle .menu .parent-menu:hover .sub-menu {
     display: block;
     max-height: 375px;
 }
-#main-header.type-b .main .middle .menu ul {
+.main-header.type-b .main .middle .menu ul {
     justify-content: space-around;
 }
-#main-header.type-b .main .right {
+.main-header.type-b .main .right {
     padding-left: 0;
     width: 370px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-#main-header.type-b .main .right .greet {
+.main-header.type-b .main .right .greet {
     font-size: 15px;
     text-align: right;
     margin-top: 0;
 }
-#main-header.type-b .main .right .member-points {
+.main-header.type-b .main .right .member-points {
     font-size: 15px;
     justify-content: flex-end;
 }
-#main-header.type-b .main .right .member-points span {
+.main-header.type-b .main .right .member-points span {
     font-family: 'roboto-bold';
 }
-#main-header.type-b .main .right .actions {
+.main-header.type-b .main .right .actions {
     margin-top: 0;
     margin-left: 25px;
     position: relative;
     width: 130px;
 }
-#main-header.type-b .main .cart-dropdown {
+.main-header.type-b .main .cart-dropdown {
     left: -156%;
 }
-#main-header.type-b .bottom {
+.main-header.type-b .bottom {
     height: 50px;
     background: #FFFFFF;
     border-top: 1px solid #707070;
 }
-#main-header.type-b .bottom .offer-menu {
+.main-header.type-b .bottom .offer-menu {
     width: 1364px;
     margin-left: auto;
     margin-right: auto;
@@ -192,7 +196,7 @@
     height: 100%;
     align-items: center;
 }
-#main-header.type-b .bottom .offer-menu ul {
+.main-header.type-b .bottom .offer-menu ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -202,24 +206,24 @@
     width: 700px;
     margin-left: 272px;
 }
-#main-header.type-b .bottom .offer-menu li {
+.main-header.type-b .bottom .offer-menu li {
     text-align: center;
 }
-#main-header.type-b .bottom .offer-menu a {
+.main-header.type-b .bottom .offer-menu a {
     text-decoration: none;
     font-size: 14px;
     color: #000000;
 }
-#main-header.type-b .bottom .offer-menu a:hover {
+.main-header.type-b .bottom .offer-menu a:hover {
     color: #EC008C;
 }
-#main-header.type-b .main .middle .menu {
+.main-header.type-b .main .middle .menu {
     position: relative;
 }
-#main-header.type-b .main .middle .menu ul li {
+.main-header.type-b .main .middle .menu ul li {
     margin-right: 0;
 }
-#main-header.type-b .main .middle .menu .sub-menu {
+.main-header.type-b .main .middle .menu .sub-menu {
     position: absolute;
     width: 1156px;
     left: 50%;
@@ -230,13 +234,13 @@
     padding: 0 20px 20px;
     box-sizing: border-box;
 }
-#main-header.type-b .main .middle .menu .sub-menu .sub-menu-spacer {
+.main-header.type-b .main .middle .menu .sub-menu .sub-menu-spacer {
     display: block;
     height: 58px;
     width: 100%;
     visibility: visible;
 }
-#main-header.type-b .main .middle .menu .sub-menu .sub-menu-links {
+.main-header.type-b .main .middle .menu .sub-menu .sub-menu-links {
     background: #FFFFFF;
     display: flex;
     height: 100%;
@@ -245,23 +249,23 @@
     padding: 35px 70px;
 }
 
-#main-header.type-b .main .middle .menu .sub-menu .sub-menu-links > ul {
+.main-header.type-b .main .middle .menu .sub-menu .sub-menu-links > ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
     height: 100%;
 }
-#main-header.type-b .main .middle .menu .sub-menu .sub-menu-links .head {
+.main-header.type-b .main .middle .menu .sub-menu .sub-menu-links .head {
     font-family: 'roboto-bold',sans-serif;
 }
-#main-header.type-b .main .middle .menu .sub-menu .sub-menu-child  {
+.main-header.type-b .main .middle .menu .sub-menu .sub-menu-child  {
     font-family: 'roboto-regular',sans-serif;
     margin-top: 10px;
     height: 215px;
     overflow: auto;
 }
-#main-header.type-b .main .middle .menu .sub-menu .sub-menu-child > ul {
+.main-header.type-b .main .middle .menu .sub-menu .sub-menu-child > ul {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -269,16 +273,122 @@
     width: 100%;
     height: 100%;
 }
-#main-header.type-b .main .middle .menu .sub-menu .sub-menu-child > ul li {
+.main-header.type-b .main .middle .menu .sub-menu .sub-menu-child > ul li {
     margin-bottom: 10px;
 }
 
             
 @media (max-width:1363px){
-    #main-header .main {
+    .main-header .main {
         width: 1200px;
     }
-        #main-header .main .middle {
+        .main-header .main .middle {
             width: calc(100% - 514px);
         }
+}
+
+@media (max-width: 1055px) {
+    .main-header .main {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    #main-container {
+        margin-top: 157px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-header .main {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+    .main-header .main .left {
+        width: 156px;
+        margin-right: 30px;
+    }
+
+    .main-header .main .right {
+        margin-left: 30px;
+        width: 250px;
+        padding-left: 0;
+    }
+
+    .main-header .main .middle {
+        width: calc(100% - 356px);
+    }
+}
+
+@media (max-width: 767px) {
+    .main-header.mobile {
+        display: block;
+        justify-content: space-between;
+        
+    }
+    .main-header.desktop {
+        display: none;
+    }
+
+    .main-header .main {
+        padding-bottom: 10px;
+    }
+
+    .main-header .main.search-bar {
+        margin-top: 0;
+    }
+
+    .main-header .main .right {
+        width: 36%;
+        margin-left: 0;
+    }
+
+    .main-header.mobile .mobile-menu {
+        background: transparent;
+        border: 0;
+        padding: 0;
+        margin: 0 15px 0 0;
+    }
+
+    .main-header .main .left {
+        width: 36%;
+        margin-right: 0;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+
+    .main-header .main .middle {
+        width: calc(100% - 72%);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .main-header .main.search-bar-wrap .middle {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .main-header .main.search-bar-wrap .middle form {
+        margin-top: 0;
+    }
+
+    .main-header .main .middle img {
+        width: 85%;
+    }
+
+    .main-header .main .actions {
+        justify-content: flex-end;
+    }
+
+    .main-header .main .actions a {
+        margin-left: 15px;
+    }
+
+    #main-container {
+        margin-top: 129px;
+    }
+
 }
