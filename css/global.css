@@ -95,6 +95,14 @@ p {
     color: #EC008C;
 }
 
+.font-pink {
+    color: #EC008C;
+}
+
+.font-blue {
+    color: #1F79B5;
+}
+
 #main-container {
     display: block;
     margin-top: 132px;
@@ -149,6 +157,7 @@ p {
     height: 25px;
     margin: 0;
 }
+
 
 /* Quantity Input TYPE B */
 .product-add-cart.type-b {
