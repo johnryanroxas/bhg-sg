@@ -261,6 +261,14 @@ p {
   color: #1f79b5;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
+.display-flex{ 
+  display: flex;
+}
+
 #main-container {
   display: block;
   margin-top: 132px;
@@ -2031,7 +2039,7 @@ p {
 
 #main-product-page .main .search-filter .search {
   width: 230px;
-  position: relative;
+  position: relative;z
   margin-right: auto;
 }
 
