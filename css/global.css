@@ -927,7 +927,7 @@ p {
 
 .mobile-overlay {
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 999500;
     width: 100%;
     height: 100%;
@@ -940,17 +940,25 @@ p {
 
 .mobile-overlay-dropdown {
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 999500;
-    width: 80%;
+    width: 70%;
     height: 100%;
     background: #FFFFFF;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
 }
 
+    .mobile-overlay-dropdown-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
     .mobile-overlay-dropdown .close-wrap {
         padding: 20px;
     }
@@ -964,8 +972,93 @@ p {
     .mobile-overlay-dropdown .main-menu,
     .mobile-overlay-dropdown .footer-menu {
         padding-left: 40px;
+        padding-right: 20px;
+    }
+    .mobile-overlay-dropdown .footer-menu {
+        margin-top: auto;
+    }
+    .mobile-overlay-dropdown ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .mobile-overlay-dropdown li {
+        margin-bottom: 15px;
+    }
+    .mobile-overlay-dropdown li a {
+        font-family: 'roboto-bold',sans-serif;
+        text-decoration: none;
+        color: #000000;
+        display: block;
+        position: relative;
     }
 
+    .mobile-overlay-dropdown li.parent-menu.hide {
+        display: none;
+    }
+    .mobile-overlay-dropdown li.parent-menu.active {
+        display: block !important;
+    }
+
+    .mobile-overlay-dropdown li.parent-menu.active > a {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #707070;
+        padding-bottom: 10px;
+    }
+
+    .mobile-overlay-dropdown li .sub-menu a {
+        font-family: 'roboto-regular',sans-serif;
+    }
+
+    .mobile-overlay-dropdown li.parent-menu .sub-menu {
+        display: none;
+    }
+
+    .mobile-overlay-dropdown li.parent-menu .sub-menu-child {
+        display: none;
+    }
+
+    .mobile-overlay-dropdown li.parent-menu .sub-menu .sub-menu-child.active{
+        display: block !important;
+    }
+
+    .mobile-overlay-dropdown li.parent-menu .sub-menu .sub-menu-child {
+        padding: 15px 0 0 20px;
+    }
+
+    .mobile-overlay-dropdown a.pml::after {
+        display: block;
+        content: '';
+        height: 13px;
+        background-image: url('../media/icons/mobile-menu-arrows.png');
+        background-position: -21px -10px;
+        background-repeat: no-repeat;
+        width: 7px;
+        top: 4px;
+        right: 0;
+        position: absolute;
+    }
+
+    .mobile-overlay-dropdown a.pml.active::after {
+        background-position: 0 -10px !important;
+    }
+
+    .mobile-overlay-dropdown a.sml.arrow-down::after {
+        display: block;
+        content: '';
+        height: 7px;
+        background-image: url('../media/icons/mobile-menu-arrows.png');
+        background-position: -8px -27px;
+        background-repeat: no-repeat;
+        width: 15px;
+        top: 4px;
+        right: 0;
+        position: absolute;
+    }
+
+    .mobile-overlay-dropdown a.sml.active.arrow-down::after {
+        background-position: -8px 0;
+    }
 
 @media (max-width: 1901px) {
     .ads-cards {

@@ -267,6 +267,27 @@ $(function(){
         $('.mobile-overlay').toggle();
         $('.mobile-overlay-dropdown').toggle();
     });
+    $('.mobile-overlay-dropdown .pml').click(function(e){
+        var x = $(this);
+        if(x.attr('href') == '') {
+            e.preventDefault();
+            $('.mobile-overlay-dropdown .parent-menu').toggle();
+            x.closest('.parent-menu').toggleClass('active');
+            x.toggleClass('active');
+            x.closest('.parent-menu').find('.sub-menu').toggle();
+        }
+        
+    });
+    $('.mobile-overlay-dropdown .sml').click(function(e){
+        var x = $(this);
+        if(x.attr('href') == '') {
+            e.preventDefault();
+            x.closest('.parent-menu').find('.sub-menu-child').hide();
+            x.closest('li').find('.sub-menu-child').toggleClass('active');
+            x.toggleClass('active');
+        }
+        
+    });
 
 });
 
