@@ -11,7 +11,7 @@
     <title>BHG Online</title>
 </head>
 
-<body id="shopping-cart-page">
+<body id="checkout-page">
     <!-- Mobile Overlay-->
     <div class="mobile-overlay"></div>
     <div class="mobile-overlay-dropdown">
@@ -1002,210 +1002,212 @@
 
 
     <!-- CONTENT-->
-    <div id="main-container" class="type-b">
+    <div id="main-container" class="type-c">
         <div class="wrapper-1364">
             <div class="col-1">
                 <button class="back-btn"><img src="media/icons/black-arrow-left.png"> Back</button>
             </div>
 
 
-            <div class="col-2">
-                <h2 class="page-title">Your Cart</h2>
-                <div class="items">
-                    <div class="item">
-                        <button class="close"><img src="media/icons/shopping-cart-close.png"></button>
-                        <div class="img-holder"><img src="media/shopping-cart-product.png" alt="Lorem Ipsum"></div>
-                        <div class="details">
-                            <div class="info">
-                                <div class="brand">Mocasines Pastoret</div>
-                                <div class="name">Leather Loafer with Penny Bar</div>
-                            </div>
-                            <div class="vars">
-                                <ul>
-                                    <li><span class="label">Size</span>: <span class="value">M</span></li>
-                                    <li><span class="label">Color</span>: <span class="value">Navy Blue</span></li>
-                                </ul>
-                            </div>
-                            <div class="cart-wrap">
-                                <div class="price"><div><span class="currency">$</span>65.00</div></div>
-                                <div class="quantity-input">
-                                    <label>Quantity:</label>
-                                    <div class="q-input">
-                                        <button class="q-minus" type="button" tabindex="0"><img src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                        <input class="q-input-num" type="text" value="1" tabindex="0">
-                                        <button class="q-plus" type="button" tabindex="0"><img src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-2-full">
+                <h2 class="page-title">Check Out</h2>
+                <p><strong>Contact Information</strong></p>
+                <div class="contact-info">
+                    <a href="#"><img src="media/profile-pic-default.png"></a>
+                    <div class="info">
+                        <div class="email"><a href="#">johndoe@abc.com</a></div>
+                        <div class="logout"><a href="#">Logout</a></div>
                     </div>
-                    <div class="item">
-                        <button class="close"><img src="media/icons/shopping-cart-close.png"></button>
-                        <div class="img-holder"><img src="media/shopping-cart-product.png" alt="Lorem Ipsum"></div>
-                        <div class="details">
-                            <div class="info">
-                                <div class="brand">Mocasines Pastoret</div>
-                                <div class="name">Leather Loafer with Penny Bar</div>
-                            </div>
-                            <div class="vars">
-                                <ul>
-                                    <li><span class="label">Size</span>: <span class="value">M</span></li>
-                                    <li><span class="label">Color</span>: <span class="value">Navy Blue</span></li>
-                                </ul>
-                            </div>
-                            <div class="cart-wrap">
-                                <div class="price"><div><span class="currency">$</span>65.00</div></div>
-                                <div class="quantity-input">
-                                    <label>Quantity:</label>
-                                    <div class="q-input">
-                                        <button class="q-minus" type="button" tabindex="0"><img src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                        <input class="q-input-num" type="text" value="1" tabindex="0">
-                                        <button class="q-plus" type="button" tabindex="0"><img src="media/icons/quantity-plus.png" alt="Plus"></button>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+                <div class="delivery-method">
+                    <p><strong>Delivery Method</strong></p>
+                    <div class="tabs">
+                        <div class="tabs-nav">
+                            <ul>
+                                <li class="active"><a href="#ship">Ship</a></li>
+                                <li><a href="#click-and-collect">Click And Collect</a></li>
+                                <li><a href="#egift">eGift</a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="item">
-                        <button class="close"><img src="media/icons/shopping-cart-close.png"></button>
-                        <div class="img-holder"><img src="media/shopping-cart-product.png" alt="Lorem Ipsum"></div>
-                        <div class="details">
-                            <div class="info">
-                                <div class="brand">Mocasines Pastoret</div>
-                                <div class="name">Leather Loafer with Penny Bar</div>
-                            </div>
-                            <div class="vars">
-                                <ul>
-                                    <li><span class="label">Size</span>: <span class="value">M</span></li>
-                                    <li><span class="label">Color</span>: <span class="value">Navy Blue</span></li>
-                                </ul>
-                            </div>
-                            <div class="cart-wrap">
-                                <div class="price"><div><span class="currency">$</span>65.00</div></div>
-                                <div class="quantity-input">
-                                    <label>Quantity:</label>
-                                    <div class="q-input">
-                                        <button class="q-minus" type="button" tabindex="0"><img src="media/icons/quantity-minus.png" alt="Minus"></button>
-                                        <input class="q-input-num" type="text" value="1" tabindex="0">
-                                        <button class="q-plus" type="button" tabindex="0"><img src="media/icons/quantity-plus.png" alt="Plus"></button>
+                        <div class="tabs-content">
+                            <div class="tab active" id="ship">
+                                <form>
+                                    <div class="check-field">
+                                        <input type="checkbox" id="ship-same-add">
+                                        <label for="ship-same-add"> Ship to same address as billing</label>
                                     </div>
+                                    <div class="check-field">
+                                        <input type="checkbox" id="ship-diff-add" class="enable-save-additional-add">
+                                        <label for="ship-diff-add"> Ship to a different address</label>
+                                    </div>
+                                    <div class="check-field sub-level">
+                                        <div class="check-wrap">
+                                            <input type="checkbox" id="save-additional-add">
+                                            <label for="save-additional-add"> Save the additional delivery address as </label>
+                                        </div>
+                                        <div class="f-select">
+                                            <div class="selected">
+                                                Home
+                                                <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                                <button class="arrow up" style="display: none;"><img src="media/icons/select-up.png"></button>
+                                            </div>
+                                            <div class="lists">
+                                                <div>Home</div>
+                                                <div>Office</div>
+                                                <div>Others</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fields-2">
+                                        <input type="text" placeholder="First Name">
+                                        <input type="text" placeholder="Last Name">
+                                    </div>
+                                    <div class="field-1">
+                                        <input type="text" placeholder="Address Line 1">
+                                    </div>
+                                    <div class="field-1">
+                                        <input type="text" placeholder="Address Line 2">
+                                    </div>
+                                    <div class="fields-2">
+                                        <input type="text" placeholder="City">
+                                        <input type="text" placeholder="State">
+                                    </div>
+                                    <div class="fields-2">
+                                        <input type="text" placeholder="Country">
+                                        <input type="text" placeholder="Zip Code">
+                                    </div>
+                                    <div class="fields-2">
+                                        <input type="text" placeholder="Phone">
+                                        <input type="text" placeholder="E-mail">
+                                    </div>
+                                    <div class="submit">
+                                        <input type="submit" value="Continue" class="add-cart-btn">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab" id="click-and-collect">
+                                <div class="alert gray">
+                                    <strong>Note</strong>: For orders between 10am - 6pm. For more collection details, refer to our delivery page.
                                 </div>
+                                <form>
+                                    <div class="vachour-wrap">
+                                        <div class="vachour">
+                                            <div class="content">
+                                                <input type="radio">
+                                                <div class="label">
+                                                    <div>
+                                                        <strong>BHG Bugis</strong>
+                                                        <div class="details">a200 Victoria Street, #01-100, #02-17 & #03-11, Bugis Junction Singapore </div>
+                                                    </div>
+                                                    <div><strong>FREE</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="more-detail">
+                                                You have 4 items available for collection at the Store after 4 hours.
+                                            </div>
+                                        </div>
+                                        <div class="vachour">
+                                            <div class="content">
+                                                <input type="radio">
+                                                <div class="label">
+                                                    <div>
+                                                        <strong>BHG Bugis</strong>
+                                                        <div class="details">a200 Victoria Street, #01-100, #02-17 & #03-11, Bugis Junction Singapore </div>
+                                                    </div>
+                                                    <div><strong>FREE</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="more-detail">
+                                                You have 4 items available for collection at the Store after 4 hours.
+                                            </div>
+                                        </div>
+                                        <div class="vachour">
+                                            <div class="content">
+                                                <input type="radio">
+                                                <div class="label">
+                                                    <div>
+                                                        <strong>BHG Bugis</strong>
+                                                        <div class="details">a200 Victoria Street, #01-100, #02-17 & #03-11, Bugis Junction Singapore </div>
+                                                    </div>
+                                                    <div><strong>FREE</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="more-detail">
+                                                You have 4 items available for collection at the Store after 4 hours.
+                                            </div>
+                                        </div>
+                                        <div class="vachour">
+                                            <div class="content">
+                                                <input type="radio">
+                                                <div class="label">
+                                                    <div>
+                                                        <strong>BHG Bugis</strong>
+                                                        <div class="details">a200 Victoria Street, #01-100, #02-17 & #03-11, Bugis Junction Singapore </div>
+                                                    </div>
+                                                    <div><strong>FREE</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="more-detail">
+                                                You have 4 items available for collection at the Store after 4 hours.
+                                            </div>
+                                        </div>
+                                        <div class="vachour">
+                                            <div class="content">
+                                                <input type="radio">
+                                                <div class="label">
+                                                    <div>
+                                                        <strong>BHG Bugis</strong>
+                                                        <div class="details">a200 Victoria Street, #01-100, #02-17 & #03-11, Bugis Junction Singapore </div>
+                                                    </div>
+                                                    <div><strong>FREE</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="more-detail">
+                                                You have 4 items available for collection at the Store after 4 hours.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab" id="egift">
+                                <form>
+                                    <div><strong>SENT TO:</strong></div>
+                                    <div class="fields-2">
+                                        <input type="text" placeholder="First Name">
+                                        <input type="text" placeholder="Last Name">
+                                    </div>
+                                    <div class="field-1">
+                                        <input type="text" placeholder="Address Line 1">
+                                    </div>
+                                    <div class="field-1">
+                                        <input type="text" placeholder="Address Line 2">
+                                    </div>
+                                    <div class="fields-2">
+                                        <input type="text" placeholder="City">
+                                        <input type="text" placeholder="State">
+                                    </div>
+                                    <div class="fields-2">
+                                        <input type="text" placeholder="Country">
+                                        <input type="text" placeholder="Zip Code">
+                                    </div>
+                                    <div class="fields-2">
+                                        <input type="text" placeholder="Phone">
+                                        <input type="text" placeholder="E-mail">
+                                    </div>
+                                    <div><strong>MESSAGE: ( Up to 160 characters )</strong></div>
+                                    <div class="field-textarea">
+                                        <textarea rows="7"></textarea>
+                                    </div>
+                                    <div class="submit">
+                                        <input type="submit" value="Continue" class="add-cart-btn">
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            
-            <!-- SIDEBAR -->
-            <div class="col-3">
-                <div class="sidebar">
-                    <div class="sidebar-wrap">
-                        <div class="vachour">
-                            <input type="text" placeholder="BHGTHEBEST12">
-                            <a href="#" class="apply-vachour">Apply</a>
-                        </div>
-                        <div class="promo">
-                            <div class="promo-warning">Promo Code is wrong</div>
-                            <div class="promo-select">
-                                <div class="f-select">
-                                    <div class="selected">
-                                        Select the promo
-                                        <button class="arrow down"><img src="media/icons/select-down.png"></button>
-                                        <button class="arrow up" style="display: none;"><img src="media/icons/select-up.png"></button>
-                                    </div>
-                                    <div class="lists" style="display: none;">
-                                        <div>5% OFF</div>
-                                        <div>Min Spend $20, $3 OFF</div>
-                                        <div>Min Spend $50, $5 OFF</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="redeem">
-                            <div class="details">
-                                <h4>Member</h4>
-                                <div class="points-wrap">
-                                    <div class="label">Redeem my Points</div>
-                                    <div class="points">XX points</div>
-                                </div>
-                            </div>
-                            <button class="btn">Redeem</button>
-                        </div>
-                        <div class="sub-total-details">
-                            <ul>
-                                <li>
-                                    <div class="label">Subtotal</div>
-                                    <div class="cost"><span class="currency">S$</span>195.00</div>
-                                </li>
-                                <li>
-                                    <div class="label">Savings</div>
-                                    <div class="cost"><span class="currency">S$</span>15.00</div>
-                                    <ul>
-                                        <li>
-                                            <div class="label"><span>- </span>Promo</div>
-                                            <div class="cost"><span class="currency">S$</span>10.00</div>
-                                        </li>
-                                        <li>
-                                            <div class="label"><span>- </span>Code (BHGTHEBEST)</div>
-                                            <div class="cost"><span class="currency">S$</span>5.00</div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <div class="label">Member Points</div>
-                                    <div class="cost"></div>
-                                    <ul>
-                                        <li>
-                                            <div class="label"><span>- </span>Points Redeem (XX points) </div>
-                                            <div class="cost"><span class="currency">S$</span>20.00</div>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="sub-total">
-                            <ul>
-                                <li class="sub-total-item">
-                                    <h4>Subtotal</h4>
-                                    <div class="cost"><span class="currency">S$</span>160.00</div>
-                                </li>
-                                <li>
-                                    <div class="promo-warning">Delivery Charge</div>
-                                    <div class="cost"><span class="currency">S$</span>0.00</div>
-                                </li>
-                                <li class="small">Enjoy FREE delivery for this order!</li>
-                                <li>
-                                    <div class="promo-warning">GST</div>
-                                    <div class="cost"><span class="currency">S$</span>11.20</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="total">
-                            <ul>
-                                <li class="total-item">
-                                    <h4>Order Total <span>(3 Items)</span></h4>
-                                    <div class="cost"><span class="currency">S$</span>171.20</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="checkout">
-                            <button class="checkout-btn btn">Checkout</button>
-                        </div>
-                        <div class="member">
-                            <ul>
-                                <li><a href="#">Member Login</a></li>
-                                <li><a href="#">Check Out as Guest</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="delivery-info">
-                        You are <strong>$XX</strong> away from <strong>FREE DELIVERY</strong>
-                    </div>
-                    
-                </div>
-                <a href="#" class="continue-shopping">Continue Shopping</a>
-            </div>
         </div>        
     </div>
 
