@@ -423,6 +423,29 @@ strong {
   box-sizing: border-box;
   padding: 0 0 0 40px;
 }
+#main-container.type-d {
+  margin-top: 184px;
+  padding-bottom: 115px;
+}
+
+#main-container.type-d .wrapper-1364{
+  justify-content: space-between;
+  display: flex;
+}
+
+#main-container.type-d .col-49 {
+  width: 49%;
+  padding-right: 70px;
+  padding-top: 36px;
+  box-sizing: border-box;
+}
+
+#main-container.type-d .col-41 {
+  width: 41%;
+  padding: 36px 40px;
+  box-sizing: border-box;
+  background: #F1F1F1;
+}
 
 .header-with-center-cirle {
   align-items: center;
@@ -1264,6 +1287,38 @@ strong {
 .mobile-overlay-dropdown a.sml.active.arrow-down::after {
   background-image: url("../media/icons/black-arrow-up.png");
 }
+
+.contact-info {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact-info img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.contact-info .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contact-info .info div {
+  padding: 2px 0;
+}
+
+.contact-info .info .logout a {
+  color: #EC008C;
+}
+
+
 
 /************************/
 /******** HEADER ********/
@@ -3348,38 +3403,8 @@ p.comment-review {
 
 
 /***************************************/
-/******** SHOPPING CART PAGE ***********/
+/******** CHECKOUT PAGE ****************/
 /***************************************/
-#checkout-page .contact-info {
-  display: flex;
-  justify-content: flex-start;
-}
-
-#checkout-page .contact-info img {
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
-}
-
-#checkout-page .contact-info .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#checkout-page .contact-info a {
-  text-decoration: none;
-  color: #000000;
-}
-
-#checkout-page .contact-info .info div {
-  padding: 2px 0;
-}
-
-#checkout-page .contact-info .info .logout a {
-  color: #EC008C;
-}
-
 #checkout-page .tabs .tabs-content {
   width: 100%;
 }
@@ -3454,6 +3479,232 @@ p.comment-review {
 #checkout-page .vachour strong {
   font-size: 18px;
 }
+
+
+/**********************************/
+/******** PAYMENT PAGE ************/
+/**********************************/
+#payment-page .tabs .tabs-nav ul {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#payment-page .tabs .tabs-nav ul li {
+  padding: 0 20px;
+  margin: 0;
+}
+
+#payment-page .tabs .tabs-content {
+  width: 100%;
+}
+
+#payment-page .address-method {
+  margin-top: 50px;
+}
+
+#payment-page .address-method .tabs-nav {
+  margin-bottom: 30px;
+}
+
+#payment-page .address-method .tabs .tabs-nav ul li.active a, 
+#payment-page .address-method .tabs .tabs-nav ul li a:hover {
+  color: #000000;
+  border-bottom: 5px solid #ec008c;
+  padding-bottom: 5px;
+}
+
+#payment-page #main-footer {
+  margin-top: 0;
+}
+#payment-page .sidebar-wrap {
+  padding: 35px;
+  background: #FFFFFF;
+}
+#payment-page .sidebar-wrap .vachour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#payment-page .sidebar-wrap .vachour a {
+  color: #000000;
+  text-decoration: underline;
+  padding: 0 20px;
+}
+
+#payment-page .sidebar-wrap .promo {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#payment-page .sidebar-wrap .promo .promo-warning {
+  color: #EC008C;
+  font-family: 'roboto-italic';
+}
+
+#payment-page .sidebar-wrap .redeem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
+  border-bottom: 1px solid #9B9B9B;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+#payment-page .sidebar-wrap .redeem .details {
+  width: calc(90% - 120px);
+}
+
+#payment-page .sidebar-wrap .redeem .details h4 {
+  margin: 0;
+}
+
+#payment-page .sidebar-wrap .redeem .details .points-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+#payment-page .sidebar-wrap .btn {
+  align-items: center;
+  background: #ec008c;
+  border: 0;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-family: "roboto-mid", sans-serif;
+  font-size: 16px;
+  height: 33px;
+  justify-content: center;
+  width: 120px;
+}
+
+#payment-page .sidebar-wrap .btn:hover {
+  background: #a5abab;
+}
+
+#payment-page .sidebar-wrap ul li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+#payment-page .sidebar-wrap ul li ul {
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+#payment-page .sidebar-wrap h4 {
+  padding: 0;
+  margin: 0;
+}
+
+#payment-page .sidebar-wrap .small {
+  font-size: 12px;
+}
+
+#payment-page .sidebar-wrap .sub-total-details,
+#payment-page .sidebar-wrap .sub-total,
+#payment-page .sidebar-wrap .total {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #9B9B9B;
+}
+
+#payment-page .sidebar-wrap .total {
+  padding-bottom: 0;
+}
+
+#payment-page .sidebar-wrap .checkout {
+  margin-top: 70px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#payment-page .sidebar-wrap .member {
+  margin-top: 30px;
+}
+
+#payment-page .sidebar-wrap .member ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#payment-page .sidebar-wrap .member a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+#payment-page .sidebar-wrap .product {
+  margin-top: 20px;
+  height: 300px;
+  overflow: auto;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #9B9B9B;
+}
+
+#payment-page .sidebar-wrap .product ul {
+  padding: 0;
+  margin: 0;
+}
+
+#payment-page .sidebar-wrap .product .quan-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#payment-page .sidebar-wrap .product .quantity {
+  width: auto;
+  padding: 0;
+}
+
+#payment-page .sidebar-wrap .product .quan-price .off {
+  font-size: 14px;
+  color: #707070;
+  margin-right: 10px;
+  text-decoration: line-through;
+  font-family: 'roboto-regular';
+}
+
+#payment-page .price {
+  display: flex;
+}
+
+#payment-page .sidebar-wrap .item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#payment-page .sidebar-wrap .img-holder {
+  width: 70px;
+}
+
+#payment-page .sidebar-wrap .content {
+  width: calc(100% - 85px);
+}
+
+#payment-page .sidebar-wrap .content > div {
+  margin-bottom: 3px;
+}
+
+#payment-page .sidebar-wrap .name, 
+#payment-page .sidebar-wrap .header .quantity {
+  font-family: "roboto-bold", sans-serif;
+}
+
+#payment-page .price {
+  font-family: "roboto-bold", sans-serif;
+}
+
 
 
 
