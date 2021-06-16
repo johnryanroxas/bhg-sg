@@ -393,6 +393,15 @@ strong {
   padding: 6px 0;
 }
 
+.main-container h2.page-title.type-b {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.main-container h2.page-title.type-b span {
+  color: #EC008C;
+}
+
 .main-container.type-b,
 .main-container.type-c {
   margin-top: 220px;
@@ -428,6 +437,11 @@ strong {
   box-sizing: border-box;
   padding: 0 0 0 40px;
 }
+
+.main-container.type-c .col-2-full .tabs .tabs-content {
+  width: 100%;
+}
+
 .main-container.type-d {
   margin-top: 184px;
 }
@@ -3719,6 +3733,402 @@ p.price {
 #payment-page .price {
   font-family: "roboto-bold", sans-serif;
 }
+
+
+/**********************************/
+/******** PAYMENT PAGE ************/
+/**********************************/
+#receipt-page .receipt-details .information {
+  display: flex;
+  justify-content: space-between;
+}
+
+#receipt-page .receipt-details .information p {
+  margin: 5px 0 0 0;
+}
+
+#receipt-page .receipt-details .information div:last-child img {
+  margin-right: 20px;
+  width: 30px;
+  height: 36px;
+  max-width: 100%;
+}
+
+#receipt-page .receipt-details .information div:last-child a {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#receipt-page .receipt-details .information div:last-child a p {
+  line-height: 24px;
+}
+
+#receipt-page .receipt-details .information div:last-child a:hover {
+  text-decoration: underline;
+}
+
+#receipt-page .receipt-table table,
+#receipt-page .receipt-table table td {
+  border-collapse: collapse;
+}
+
+#receipt-page .receipt-table table {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#receipt-page .receipt-table thead td {
+  border-top: 3px solid #757575;
+  border-bottom: 1px solid #757575;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'roboto-bold';
+}
+
+#receipt-page .receipt-table tbody td {
+  border-bottom: 1px solid #757575;
+}
+
+#receipt-page .receipt-table tbody td {
+  padding: 10px;
+}
+
+#receipt-page .receipt-table img {
+  width: 70px;
+  height: auto;
+}
+
+#receipt-page .receipt-table .tag-name {
+  font-family: 'roboto-bold';
+  border: 1px solid #000000;
+  width: 60px;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+#receipt-page .receipt-table .item .price {
+  color: #303030;
+  font-size: 12px;
+}
+
+#receipt-page .receipt-table tbody td:first-child,
+#receipt-page .receipt-table thead td:first-child {
+  width: 90px;
+}
+
+#receipt-page .receipt-table .item div {
+  margin-bottom: 3px;
+}
+
+#receipt-page .receipt-details .footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#receipt-page .receipt-details .footer .note {
+  border: 1px solid #707070;
+  background: #FFFFFF;
+  padding: 15px;
+  width: 400px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+#receipt-page .receipt-details .footer .note p {
+  margin: 0;
+}
+
+#receipt-page .receipt-details .footer a {
+  text-decoration: none;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#receipt-page .receipt-details .footer .cost-wrap {
+  width: 385px;
+}
+
+#receipt-page .sidebar-wrap {
+  padding: 0;
+  background: #FFFFFF;
+}
+#receipt-page .sidebar-wrap .vachour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#receipt-page .sidebar-wrap .vachour a {
+  color: #000000;
+  text-decoration: underline;
+  padding: 0 20px;
+}
+
+#receipt-page .sidebar-wrap .promo {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#receipt-page .sidebar-wrap .promo .promo-warning {
+  color: #EC008C;
+  font-family: 'roboto-italic';
+}
+
+#receipt-page .sidebar-wrap .redeem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
+  border-bottom: 1px solid #9B9B9B;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+#receipt-page .sidebar-wrap .redeem .details {
+  width: calc(90% - 120px);
+}
+
+#receipt-page .sidebar-wrap .redeem .details h4 {
+  margin: 0;
+}
+
+#receipt-page .sidebar-wrap .redeem .details .points-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+#receipt-page .sidebar-wrap .btn {
+  align-items: center;
+  background: #ec008c;
+  border: 0;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-family: "roboto-mid", sans-serif;
+  font-size: 16px;
+  height: 33px;
+  justify-content: center;
+  width: 120px;
+}
+
+#receipt-page .sidebar-wrap .btn:hover {
+  background: #a5abab;
+}
+
+
+#receipt-page .sidebar-wrap ul{
+  margin: 0;
+  padding: 0;
+}
+#receipt-page .sidebar-wrap ul li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+#receipt-page .sidebar-wrap ul li ul {
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+#receipt-page .sidebar-wrap h4 {
+  padding: 0;
+  margin: 0;
+}
+
+#receipt-page .sidebar-wrap .small {
+  font-size: 12px;
+}
+
+#receipt-page .sidebar-wrap .sub-total-details,
+#receipt-page .sidebar-wrap .sub-total,
+#receipt-page .sidebar-wrap .total {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #9B9B9B;
+}
+
+#receipt-page .sidebar-wrap .total {
+  padding-bottom: 0;
+}
+
+#receipt-page .sidebar-wrap .checkout {
+  margin-top: 70px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#receipt-page .sidebar-wrap .member {
+  margin-top: 30px;
+}
+
+#receipt-page .sidebar-wrap .member ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#receipt-page .sidebar-wrap .member a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+#receipt-page .sidebar-wrap .product {
+  margin-top: 20px;
+  height: 300px;
+  overflow: auto;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #9B9B9B;
+}
+
+#receipt-page .sidebar-wrap .product ul {
+  padding: 0;
+  margin: 0;
+}
+
+#receipt-page .sidebar-wrap .product .quan-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#receipt-page .sidebar-wrap .product .quantity {
+  width: auto;
+  padding: 0;
+}
+
+#receipt-page .sidebar-wrap .product .quan-price .off {
+  font-size: 14px;
+  color: #707070;
+  margin-right: 10px;
+  text-decoration: line-through;
+  font-family: 'roboto-regular';
+}
+
+#receipt-page .footer .price {
+  display: flex;
+}
+
+#receipt-page .sidebar-wrap .item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#receipt-page .sidebar-wrap .img-holder {
+  width: 70px;
+}
+
+#receipt-page .sidebar-wrap .content {
+  width: calc(100% - 85px);
+}
+
+#receipt-page .sidebar-wrap .content > div {
+  margin-bottom: 3px;
+}
+
+#receipt-page .sidebar-wrap .name, 
+#receipt-page .sidebar-wrap .header .quantity {
+  font-family: "roboto-bold", sans-serif;
+}
+
+#receipt-page .price {
+  font-family: "roboto-bold", sans-serif;
+}
+
+
+
+/****************************************/
+/******** PROMOTION PAGE ****************/
+/****************************************/
+#promotion-page .promotion-wrap {
+  margin-top: 50px;
+}
+
+#promotion-page .tabs .tabs-nav ul li {
+  text-align: center;
+}
+
+#promotion-page .promotion-box {
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#promotion-page .promotion-box .promo-item {
+  margin: 10px;
+  position: relative;
+  width: 48%;
+}
+
+#promotion-page .promotion-box .promo-item .overlay-bg {
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+  position: absolute;
+  z-index: 500;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: -3px;
+  left: 0;
+  border-radius: 10px;
+}
+
+#promotion-page .promotion-box .promo-item .promo-detail {
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+  color: #FFFFFF;
+  z-index: 501;
+}
+
+#promotion-page .promotion-box .promo-item .promo-detail .title {
+  font-size: 30px;
+}
+
+#promotion-page .promotion-box .promo-item .promo-detail .tag {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#promotion-page .promotion-box .promo-item .promo-detail a {
+  color: #FFFFFF;
+  font-family: 'roboto-mid';
+  margin-top: 25px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+
+#promotion-page .promotion-box .promo-item .promo-detail a::after {
+  display: block;
+  content: '';
+  width: 65px;
+  height: 2px;
+  background: #EC008C;
+  top: 24px;
+  position: absolute;
+}
+
+
+
+
+
 
 
 
