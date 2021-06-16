@@ -451,6 +451,10 @@ strong {
   display: flex;
 }
 
+.main-container.type-d .wrapper-1364.type-b {
+  display: block;
+}
+
 .main-container.type-d .col-49 {
   width: 49%;
   padding-right: 70px;
@@ -4127,10 +4131,126 @@ p.price {
 
 
 
+/************************************/
+/******** MEMBERSHIP PAGE ***********/
+/************************************/
+#membership-page .new-member-upgrade {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: -100px;
+}
+
+#membership-page .new-member-upgrade div {
+  margin: 10px;
+}
+
+#membership-page .membership-table {
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  align-items: flex-start;
+}
+
+#membership-page .membership-table .member {
+  box-shadow: 0 0 6px 0px rgb(0 0 0 / 15%);
+  border-radius: 10px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  width: 30%;
+}
+
+#membership-page .membership-table .head {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 4px solid #EBEBEB;
+}
+
+#membership-page .membership-table .body {
+  padding: 30px 0;
+}
+
+#membership-page .membership-table ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#membership-page .membership-table li {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#membership-page .membership-table .title {
+  font-size: 20px;
+}
+
+#membership-page .membership-table li .sub-detail {
+  font-size: 14px;
+  color: #EC008C;
+}
+
+#membership-page .membership-table li span {
+  font-size: 14px;
+}
+
+#membership-page .note {
+  text-align: center;
+  margin: 20px 0 70px 0;
+}
+
+#membership-page .earn-redeem {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#membership-page .earn-redeem .left,
+#membership-page .earn-redeem .right {
+  width: 48%;
+}
+
+#membership-page .earn-redeem h3 {
+  margin: 0;
+  font-size: 28px;
+}
+
+#membership-page .earn-redeem ul {
+  margin: 0;
+  padding: 0;
+  list-style: disc;
+}
+
+#membership-page .earn-redeem li {
+  font-size: 14px;
+}
+
+#membership-page .earn-redeem p {
+  margin: 5px 0;
+}
 
 
+#membership-page .earn-redeem table {
+  width: 80%;
+  border-collapse: collapse;
+  float: right;
+}
 
+#membership-page .earn-redeem table,
+#membership-page .earn-redeem th,
+#membership-page .earn-redeem td {
+  border: 1px solid #000000;
+  padding: 20px 0;
+  text-align: center;
+}
 
+#membership-page .earn-redeem td {
+  width: 50%;
+}
 
 
 /**********************************/
