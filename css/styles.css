@@ -384,7 +384,7 @@ strong {
 
 .main-container {
   display: block;
-  margin-top: 132px;
+  margin-top: 100px;
   width: 100%;
 }
 
@@ -404,7 +404,7 @@ strong {
 
 .main-container.type-b,
 .main-container.type-c {
-  margin-top: 220px;
+  margin-top: 188px;
 }
 
 .main-container.type-b .wrapper-1364 {
@@ -443,7 +443,7 @@ strong {
 }
 
 .main-container.type-d {
-  margin-top: 184px;
+  margin-top: 152px;
 }
 
 .main-container.type-d .wrapper-1364{
@@ -473,7 +473,7 @@ strong {
 
 .main-container.type-e {
   display: flex;
-  margin-top: 220px;
+  margin-top: 188px;
 }
 
 .main-container.type-e .wrapper-1364 {
@@ -1374,6 +1374,7 @@ strong {
   background-color: #f6f6f6;
   height: 32px;
   width: 100%;
+  display: none !important;
 }
 .main-header .main {
   display: flex;
@@ -3051,7 +3052,7 @@ p.price {
 /******** LOGIN PAGE ***********/
 /*******************************/
 #login-page.main-container.login {
-  margin-top: 184px;
+  margin-top: 152px;
   display: flex;
   width: 100%;
   min-height: calc(100vh - 183px);
@@ -4591,7 +4592,7 @@ p.price {
   }
 
   .main-container {
-    margin-top: 157px;
+    margin-top: 125px;
   }
 }
 @media (max-width: 1024px) {
