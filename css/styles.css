@@ -4835,8 +4835,20 @@ p.price {
   list-style: disc;
 }
 
+#reviews-section.tabs-included .tabs .tabs-nav ul li a {
+  font-size: 20px;
+}
 
+#reviews-section.tabs-included .tabs .tabs-nav ul li {
+  margin: 0 30px 0 0;
+}
+#reviews-section.tabs-included .tabs .tabs-nav ul li:last-child {
+  margin-right: 0;
+}
 
+#reviews-section.tabs-included .tabs .tabs-nav ul {
+  padding-bottom: 0px; 
+}
 #product-individual-page div#tabs-section.mobile .tabs .tabs-nav ul li .accordion ul {
   margin-left: 35px;
 }
