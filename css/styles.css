@@ -4865,7 +4865,7 @@ p.price {
 }
 
 #product-individual-page div#tabs-section.mobile .tabs .tabs-nav ul li.active a::after {
-  transform: rotate(180deg);  
+  transform: scaleY(-1);
 }
 
 #product-individual-page div#tabs-section.mobile {
