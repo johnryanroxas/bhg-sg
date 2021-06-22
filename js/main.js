@@ -337,5 +337,19 @@ $(function(){
         }
     });
 
+    //custom accordion
+    
+    $('#product-individual-page div#tabs-section.mobile .tabs .tabs-nav ul li .accordion').hide(); 
+
+    $('#product-individual-page div#tabs-section.mobile .tabs .tabs-nav ul li').click(function() {
+
+        $('#product-individual-page div#tabs-section.mobile .tabs .tabs-nav ul li .accordion').slideUp();    
+        $(this).find(".accordion").slideToggle();  
+        $(this).find(".accordion").toggleClass("active");
+               
+        return false;
+    });
+
+
 });
 
