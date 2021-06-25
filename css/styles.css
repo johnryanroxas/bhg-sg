@@ -4261,7 +4261,83 @@ p.price {
   display: none;
 }
 
+/************************************/
+/******** INDIVIDUAL ADD ON  PAGE ***********/
+/************************************/
 
+.add-on-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.add-on-details span {
+  font-weight: 700;
+  display: block;
+}
+.add-on-product-image {
+  width: 100px;
+  height: 100px;
+}
+.checkbox-addon-product {
+  align-items: center;
+  width: 413px;
+}
+.add-on-checkbox {
+  margin-right: 20px;
+}
+.add-on-box-wrap {
+  align-items: center; 
+  padding-top: 20px;
+  border-bottom: 1px solid #757575;
+  padding-bottom: 20px;
+}
+
+.add-on-box-wrap.first{
+  border-top: 1px solid #757575;
+}
+.add-on-box-wrap .discounts-dropdown, .add-on-box-wrap .detail-wraps {
+  display: block;
+  width: 240px;
+  margin-right: 10px;
+}
+.add-on-box-wrap .detail-wraps {
+  margin-top: 0;
+ }
+ span.original-price {
+  color: #1E1E1E;
+  text-decoration: line-through;
+  margin-right: 20px;
+}
+.add-on-price {
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding-top: 25px;
+}
+span.discount-price {
+  font-weight: 700;
+}
+
+.add-on-box-wrap .quantity-cart-wishlist-wrap {
+  margin-left: 20px;
+}
+.add-to-cart-box {
+  width: 100%;
+  max-width: 95%;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #707070;
+  padding: 20px 20px 20px 47px;
+  margin-top: 87px;
+}
+.add-to-cart-box button.btn.add-to-cart {
+  float: right;
+}
+
+.add-to-cart-box .selected {
+  float: left;
+  padding-top: 15px;
+}
 /**********************************/
 /******** MEDIA QUERIES ***********/
 /**********************************/
