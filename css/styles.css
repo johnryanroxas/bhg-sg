@@ -5823,10 +5823,22 @@ span.discount-price {
   float: left;
   padding-top: 15px;
 }
+
+
+
+
+
+
 /**********************************/
 /******** MEDIA QUERIES ***********/
 /**********************************/
 @media (max-width: 1787px) {
+  .main-container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .news .media-wrap .item {
     width: 24%;
   }
@@ -5834,6 +5846,10 @@ span.discount-price {
 @media (max-width: 1466px) {
   .special-products {
     width: 92%;
+  }
+
+  .cart-dropdown .product {
+    height: 190px;
   }
 }
 @media (max-width: 1363px) {
@@ -5843,6 +5859,13 @@ span.discount-price {
 
   #home-promo .products .items {
     width: 48%;
+  }
+
+  #main-product-page .sidebar {
+    width: 18%;
+  }
+  #main-product-page .main {
+    width: 78%;
   }
 
   #product-individual-page .box.box-416, #reviews-section .box.box-416 {
@@ -6105,6 +6128,9 @@ span.discount-price {
   #login-page .login-box {
     margin-left: 5%;
   }
+  .main-header.type-b .main .middle .menu .sub-menu {
+    width: 100vw;
+  }
 }
 @media (max-width: 1363px) {
   .add-cart-btn {
@@ -6159,11 +6185,11 @@ span.discount-price {
   }
 
   #main-product-page .main {
-    width: 80%;
+    width: 78%;
   }
 
   #main-product-page .sidebar {
-    width: 16%;
+    width: 18%;
   }
 }
 @media (max-width: 1280px) {

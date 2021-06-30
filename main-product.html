@@ -1097,8 +1097,8 @@
                                     <button class="arrow up"><img src="media/icons/select-up.png"></button>
                                 </div>
                                 <div class="lists">
-                                    <div class="list"><input type="radio" name="promotion"><span>Yes</span></div>
-                                    <div class="list"><input type="radio" name="promotion"><span>No</span></div>
+                                    <div class="list"><input type="radio" name="bhg-exclusive"><span>Yes</span></div>
+                                    <div class="list"><input type="radio" name="bhg-exclusive"><span>No</span></div>
                                 </div>
                             </div>
                         </div>
@@ -1109,14 +1109,25 @@
                             <div class="head">
                                 <h3>Price</h3>
                             </div>
-                            <div class="range">
-                                <input type="range" min="0" max="50000" value="1000" step="100">
+
+                            <div class="price-range-block">
+                            
+                                <div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+                        
+                                <button class="price-range-search" id="price-range-submit">Search</button>
+                            
+                                
+                            
                             </div>
+
+                            <div class="prices">
+                                Price: 
+                                $<input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" /> - $<input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field" />
+                        </div>
+
                             <div class="label">
                                 <button class="add-cart-btn type-b">Filter</button>
-                                <div class="prices">
-                                    Price: <span class="currency">$</span><span class="price">1000</span>
-                                </div>
+                               
                             </div>
                         </div>
 
@@ -1207,14 +1218,25 @@
                                     <div class="head">
                                         <h3>Price</h3>
                                     </div>
-                                    <div class="range">
-                                        <input type="range" min="0" max="50000" value="1000" step="100">
+        
+                                    <div class="price-range-block">
+                                    
+                                        <div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+                                
+                                        <button class="price-range-search" id="price-range-submit">Search</button>
+                                    
+                                        
+                                    
                                     </div>
+        
+                                    <div class="prices">
+                                        Price: 
+                                        $<input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" /> - $<input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field" />
+                                </div>
+        
                                     <div class="label">
                                         <button class="add-cart-btn type-b">Filter</button>
-                                        <div class="prices">
-                                            Price: <span class="currency">$</span><span class="price">1000</span>
-                                        </div>
+                                       
                                     </div>
                                 </div>
         
@@ -1702,7 +1724,9 @@
     </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/price_range_script.js"></script>
     <script src="js/main.js"></script>
 </body>
 
