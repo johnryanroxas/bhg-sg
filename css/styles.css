@@ -3444,9 +3444,20 @@ strong {
 }
 #main-footer .social-media {
   margin-top: 55px;
+  display: flex;
 }
 #main-footer .social-media a {
   margin-right: 20px;
+  width: 36px;
+  height: 37px;
+  background: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+#main-footer .social-media a:hover {
+  background: #ec008c;
 }
 #main-footer .copyright {
   margin-top: 45px;
@@ -3473,7 +3484,7 @@ strong {
   font-size: 16px;
 }
 #main-footer .link a:hover {
-  text-decoration: underline;
+  color: #EC008C;
 }
 #main-footer .top {
   display: flex;
