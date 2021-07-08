@@ -1002,290 +1002,389 @@
 
 
     <!-- CONTENT-->
-    <div id="payment-page" class="main-container type-d">
+    <div id="main-product-page" class="main-container type-b">
+
+        <!-- BREADCRUMB -->
+        <section class="breadcrumb">HOME / WOMEN / APPAREL / PAGE 1 OF 9</section>
+
+
         <div class="wrapper-1364">
-            <div class="col-49">
-                <h2 class="page-title">Payment</h2>
-                <p><strong>Contact Information</strong></p>
-                <div class="contact-info">
-                    <a href="#"><img src="media/profile-pic-default.png"></a>
-                    <div class="info">
-                        <div class="email"><a href="#">johndoe@abc.com</a></div>
-                        <div class="logout"><a href="#">Logout</a></div>
+
+            <div class="header">
+                <h1>Apparels</h1>
+                <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip.</p>
+            </div>
+
+
+            <div class="navigation">
+                <ul>
+                    <li><a href="">Coats & Jackets</a></li>
+                    <li><a href="" class="active">Dresses & Jumpsuits</a></li>
+                    <li><a href="">Skirts</a></li>
+                    <li><a href="">Jeans</a></li>
+                    <li><a href="">Tops</a></li>
+                    <li><a href="">Trousers & Shorts</a></li>
+                    <li><a href="">Sportswear</a></li>
+                </ul>
+            </div>
+
+
+            <div class="box">
+
+                <!-- SIDEBAR -->
+                <div class="sidebar">
+                    <!-- <<< Filter for Desktop >>>-->
+                    <div class="filter-for-desktop">
+                        <h2>Filter by:</h2>
+                        <div class="filters">
+
+                            <!-- BRAND FILER -->
+                            <div class="f-filter-drop">
+                                <div class="head">
+                                    <h3>Brands</h3>
+                                    <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                    <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                </div>
+                                <div class="lists">
+                                    <div class="list"><input type="checkbox"><span>FUNFIT</span></div>
+                                    <div class="list"><input type="checkbox"><span>Hedley Kepler</span></div>
+                                    <div class="list"><input type="checkbox"><span>Hush Puppies</span></div>
+                                    <div class="list"><input type="checkbox"><span>Otona Mode</span></div>
+                                    <div class="list"><input type="checkbox"><span>SBT</span></div>
+                                    <div class="list"><input type="checkbox"><span>Societe</span></div>
+                                    <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+                                    <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+                                    <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+                                </div>
+                            </div>
+
+                            <!-- SIZE FILTER -->
+                            <div class="f-filter-drop">
+                                <div class="head">
+                                    <h3>Size</h3>
+                                    <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                    <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                </div>
+                                <div class="lists">
+                                    <div class="list"><input type="checkbox"><span>XS</span></div>
+                                    <div class="list"><input type="checkbox"><span>S</span></div>
+                                    <div class="list"><input type="checkbox"><span>M</span></div>
+                                    <div class="list"><input type="checkbox"><span>L</span></div>
+                                    <div class="list"><input type="checkbox"><span>XL</span></div>
+                                </div>
+                            </div>
+
+                            <!-- PROMOTION -->
+                            <div class="f-filter-drop">
+                                <div class="head">
+                                    <h3>Promotion</h3>
+                                    <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                    <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                </div>
+                                <div class="lists">
+                                    <div class="list"><input type="radio" name="promotion"><span>Yes</span></div>
+                                    <div class="list"><input type="radio" name="promotion"><span>No</span></div>
+                                </div>
+                            </div>
+
+                            <!-- EXCLUSIVES -->
+                            <div class="f-filter-drop">
+                                <div class="head">
+                                    <h3>BHG Exclusives</h3>
+                                    <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                    <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                </div>
+                                <div class="lists">
+                                    <div class="list"><input type="radio" name="bhg-exclusive"><span>Yes</span></div>
+                                    <div class="list"><input type="radio" name="bhg-exclusive"><span>No</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- PRICE -->
+                        <div class="f-filter-price">
+                            <div class="head">
+                                <h3>Price</h3>
+                            </div>
+
+                            <div class="price-range-block">
+                            
+                                <div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+                        
+                                <button class="price-range-search" id="price-range-submit">Search</button>
+                            
+                                
+                            
+                            </div>
+
+                            <div class="prices">
+                                Price: 
+                                $<input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" /> - $<input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field" />
+                        </div>
+
+                            <div class="label">
+                                <button class="add-cart-btn type-b">Filter</button>
+                               
+                            </div>
+                        </div>
+
+                        <!-- RESET FILTER -->
+                        <div class="f-reset">
+                            <button class="add-cart-btn type-b f-reset-btn">Reset</button>
+                        </div>
                     </div>
-                </div>
-                <div class="payment-method">
-                    <p><strong>Payment</strong></p>
-                    <p>All Transaction are secure and encrypted</p>
-                    <p>Please select the payment option</p>
-                    <div class="tabs">
-                        <div class="tabs-nav">
-                            <ul>
-                                <li><a href="#hoolah"><img src="media/cards/hoolah.png"></a></li>
-                                <li class="active"><a href="#amex"><img src="media/cards/amex.png"></a></li>
-                                <li><a href="#mastercard"><img src="media/cards/mastercard.png"></a></li>
-                                <li><a href="#visa"><img src="media/cards/visa.png"></a></li>
-                                <li><a href="#dinersclub"><img src="media/cards/dinersclub.png"></a></li>
-                            </ul>
+
+
+                    <!-- <<< Filter for Mobile >>>-->
+                    <div class="filter-for-mobile">
+                        <div class="filters-for-mobile-wrap">
+                            <div class="filters-mobile-btn">
+                                Filters
+                                <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                            </div>
+                            <div class="filters-mobile">
+                                <div class="filters">
+    
+                                    <!-- BRAND FILER -->
+                                    <div class="f-filter-drop">
+                                        <div class="head">
+                                            <h3>Brands</h3>
+                                            <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                            <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                        </div>
+                                        <div class="lists">
+                                            <div class="list"><input type="checkbox"><span>FUNFIT</span></div>
+                                            <div class="list"><input type="checkbox"><span>Hedley Kepler</span></div>
+                                            <div class="list"><input type="checkbox"><span>Hush Puppies</span></div>
+                                            <div class="list"><input type="checkbox"><span>Otona Mode</span></div>
+                                            <div class="list"><input type="checkbox"><span>SBT</span></div>
+                                            <div class="list"><input type="checkbox"><span>Societe</span></div>
+                                            <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+                                            <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+                                            <div class="list"><input type="checkbox"><span>Lorem Ipsum</span></div>
+                                        </div>
+                                    </div>
+        
+                                    <!-- SIZE FILTER -->
+                                    <div class="f-filter-drop">
+                                        <div class="head">
+                                            <h3>Size</h3>
+                                            <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                            <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                        </div>
+                                        <div class="lists">
+                                            <div class="list"><input type="checkbox"><span>XS</span></div>
+                                            <div class="list"><input type="checkbox"><span>S</span></div>
+                                            <div class="list"><input type="checkbox"><span>M</span></div>
+                                            <div class="list"><input type="checkbox"><span>L</span></div>
+                                            <div class="list"><input type="checkbox"><span>XL</span></div>
+                                        </div>
+                                    </div>
+        
+                                    <!-- PROMOTION -->
+                                    <div class="f-filter-drop">
+                                        <div class="head">
+                                            <h3>Promotion</h3>
+                                            <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                            <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                        </div>
+                                        <div class="lists">
+                                            <div class="list"><input type="radio" name="promotion"><span>Yes</span></div>
+                                            <div class="list"><input type="radio" name="promotion"><span>No</span></div>
+                                        </div>
+                                    </div>
+        
+                                    <!-- EXCLUSIVES -->
+                                    <div class="f-filter-drop">
+                                        <div class="head">
+                                            <h3>BHG Exclusives</h3>
+                                            <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                            <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                                        </div>
+                                        <div class="lists">
+                                            <div class="list"><input type="radio" name="promotion"><span>Yes</span></div>
+                                            <div class="list"><input type="radio" name="promotion"><span>No</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+        
+                                <!-- PRICE -->
+                                <div class="f-filter-price">
+                                    <div class="head">
+                                        <h3>Price</h3>
+                                    </div>
+        
+                                    <div class="price-range-block">
+                                    
+                                        <div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+                                
+                                        <button class="price-range-search" id="price-range-submit">Search</button>
+                                    
+                                        
+                                    
+                                    </div>
+        
+                                    <div class="prices">
+                                        Price: 
+                                        $<input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" /> - $<input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field" />
+                                </div>
+        
+                                    <div class="label">
+                                        <button class="add-cart-btn type-b">Filter</button>
+                                       
+                                    </div>
+                                </div>
+        
+                                <!-- RESET FILTER -->
+                                <div class="f-reset">
+                                    <button class="add-cart-btn type-b f-reset-btn">Reset</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tabs-content">
-                            <div class="tab" id="hoolah">
-                                <div class="alert gray">After clicking <strong>"Checkout"</strong>. you will be redirected to hoolah to complete your purchase securely</div>
+                        <div class="f-select">
+                            <div class="selected">
+                                Sort By : <span>Product Name</span>
+                                <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                <button class="arrow up"><img src="media/icons/select-up.png"></button>
                             </div>
-                            <div class="tab active" id="amex">
-                                <form>
-                                    <div class="field-1">
-                                        <input type="text" placeholder="Card Number">
-                                    </div>
-                                    <div class="field-1">
-                                        <input type="text" placeholder="Name on card">
-                                    </div>
-                                    <div class="fields-2">
-                                        <input type="text" placeholder="Expiration Date">
-                                        <input type="text" placeholder="Security Code">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="tab" id="mastercard">
-                                <form>
-                                    <div class="field-1">
-                                        <input type="text" placeholder="Card Number">
-                                    </div>
-                                    <div class="field-1">
-                                        <input type="text" placeholder="Name on card">
-                                    </div>
-                                    <div class="fields-2">
-                                        <input type="text" placeholder="Expiration Date">
-                                        <input type="text" placeholder="Security Code">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="tab" id="visa">
-                                <form>
-                                    <div class="field-1">
-                                        <input type="text" placeholder="Card Number">
-                                    </div>
-                                    <div class="field-1">
-                                        <input type="text" placeholder="Name on card">
-                                    </div>
-                                    <div class="fields-2">
-                                        <input type="text" placeholder="Expiration Date">
-                                        <input type="text" placeholder="Security Code">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="tab" id="dinersclub">
-                                <form>
-                                    <div class="field-1">
-                                        <input type="text" placeholder="Card Number">
-                                    </div>
-                                    <div class="field-1">
-                                        <input type="text" placeholder="Name on card">
-                                    </div>
-                                    <div class="fields-2">
-                                        <input type="text" placeholder="Expiration Date">
-                                        <input type="text" placeholder="Security Code">
-                                    </div>
-                                </form>
+                            <div class="lists">
+                                <div>Top Sellers</div>
+                                <div>New Arrivals</div>
+                                <div>Product Name</div>
+                                <div>Price</div>
                             </div>
                         </div>
                     </div>
+
+
+
                 </div>
-                <div class="address-method">
-                    <div class="tabs">
-                        <div class="tabs-nav">
-                            <ul>
-                                <li class="active"><a href="#billing-address">Billing Address</a></li>
-                                <li><a href="#delivery-address">Delivery Address</a></li>
-                            </ul>
+
+
+                <div class="main">
+                    <div class="search-filter">
+                        <div class="search">
+                            <input type="text">
+                            <button><img src="media/icons/search.png"></button>
                         </div>
-                        <div class="tabs-content">
-                            <div class="tab active" id="billing-address">
-                                <form>
-                                    <div class="fields-2">
-                                        <input type="text" value="Johny">
-                                        <input type="text" value="Doe">
-                                    </div>
-                                    <div class="field-1">
-                                        <input type="text" value="Lorem Ipsum Address">
-                                    </div>
-                                    <div class="field-1">
-                                        <input type="text" value="Lorem Ipsum Address 2">
-                                    </div>
-                                    <div class="fields-2">
-                                        <input type="text" value="Lorem Ipsum City">
-                                        <input type="text" value="Dor Erat">
-                                    </div>
-                                    <div class="fields-2">
-                                        <input type="text" value="Singapore">
-                                        <input type="text" value="89898989">
-                                    </div>
-                                    <div class="fields-2">
-                                        <input type="text" value="+62 8888 8888">
-                                        <input type="text" value="johndoe@gmail.com">
-                                    </div>
-                                </form>
+                        <div class="f-select">
+                            <div class="selected">
+                                Sort By : <span>Product Name</span>
+                                <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                <button class="arrow up"><img src="media/icons/select-up.png"></button>
                             </div>
-                            <div class="tab" id="delivery-address">
-                                <form>
-                                    <div class="fields-2">
-                                        <input type="text" value="Johny">
-                                        <input type="text" value="Doe">
-                                    </div>
-                                    <div class="field-1">
-                                        <input type="text" value="Lorem Ipsum Address">
-                                    </div>
-                                    <div class="field-1">
-                                        <input type="text" value="Lorem Ipsum Address 2">
-                                    </div>
-                                    <div class="fields-2">
-                                        <input type="text" value="Lorem Ipsum City">
-                                        <input type="text" value="Dor Erat">
-                                    </div>
-                                    <div class="fields-2">
-                                        <input type="text" value="Singapore">
-                                        <input type="text" value="89898989">
-                                    </div>
-                                    <div class="fields-2">
-                                        <input type="text" value="+62 8888 8888">
-                                        <input type="text" value="johndoe@gmail.com">
-                                    </div>
-                                </form>
+                            <div class="lists">
+                                <div>Top Sellers</div>
+                                <div>New Arrivals</div>
+                                <div>Product Name</div>
+                                <div>Price</div>
                             </div>
                         </div>
+                        <button class="f-sorter">
+                            <img src="media/icons/sort-down.png" class="down">
+                            <img src="media/icons/sort-up.png" class="up">
+                        </button>
+                        <div class="f-select">
+                            <div class="selected">
+                                Show <span>12 Products</span>
+                                <button class="arrow down"><img src="media/icons/select-down.png"></button>
+                                <button class="arrow up"><img src="media/icons/select-up.png"></button>
+                            </div>
+                            <div class="lists">
+                                <div>Show <span>12 Products</span></div>
+                                <div>Show <span>24 Products</span></div>
+                                <div>Show <span>36 Products</span></div>
+                                <div>Show <span>42 Products</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="item-hover-overlay"></div>
+                            <div class="img-holder">
+                                <img src="media/dress-0.png" class="front">
+                                <img src="media/dress-1.png" class="hover">
+                                <div class="badge">
+                                    <ul>
+                                        <li class="sold">Sold Out</li>
+                                        <li class="new">New</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="title">Lorem Ipsum</div>
+                                <div class="description">Lorem ipsum dosdlor sit consectetur adipiscing...</div>
+                                <div class="product-price">
+                                    <div class="price"><span class="currency">$</span>16.88</div>
+                                    <div class="off-price"><span class="currency">$</span>39.90</div>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="product-add-cart type-b">
+                                <div class="quantity-input type-b">
+                                    <div class="q-input">
+                                        <button class="q-minus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-minus.png" alt="Minus"></button>
+                                        <input class="q-input-num" type="text" value="1" tabindex="0">
+                                        <button class="q-plus" type="button" tabindex="0"><img
+                                                src="media/icons/quantity-plus.png" alt="Plus"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="0"><img src="media/icons/icon-cart.png" alt="Cart"></button>
+                                <button tabindex="0"><img src="media/icons/icon-heart.png" alt="Heart"></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="arrows-with-pagination">
+                        <button class="prev" tabindex="0"><img src="media/icons/paging-left-arrow.png" alt="preve"></button>
+                        <div class="paging"><ul class="slick-dots" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control170" aria-controls="slick-slide170" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control171" aria-controls="slick-slide171" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control172" aria-controls="slick-slide172" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
+                        <button class="next" tabindex="0"><img src="media/icons/paging-right-arrow.png" alt="preve"></button>
                     </div>
                 </div>
             </div>
-            <div class="col-41">
-                <div class="sidebar-wrap">
-                    <div class="product">
-                        <div class="item">
-                            <div class="img-holder">
-                                <a href=""><img src="media/product-dropdown.png" alt="product"></a>
-                            </div>
-                            <div class="content">
-                                <div class="brand">Mocasines Pastoret</div>
-                                <div class="name">Leather Loafer with Penny Bar</div>
-                                <div class="variation">
-                                    <ul>
-                                        <li>Size: M</li>
-                                        <li>Color: Navy Blue</li>
-                                    </ul>
-                                </div>
-                                <div class="quan-price">
-                                    <div class="quantity">Quantity: 1</div>
-                                    <div class="price"><span class="currency">$</span>65.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="img-holder">
-                                <a href=""><img src="media/product-dropdown.png" alt="product"></a>
-                            </div>
-                            <div class="content">
-                                <div class="brand">Mocasines Pastoret</div>
-                                <div class="name">Leather Loafer with Penny Bar</div>
-                                <div class="variation">
-                                    <ul>
-                                        <li>Size: M</li>
-                                        <li>Color: Navy Blue</li>
-                                    </ul>
-                                </div>
-                                <div class="quan-price">
-                                    <div class="quantity">Quantity: 1</div>
-                                    <div class="price"><span class="currency">$</span>65.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="img-holder">
-                                <a href=""><img src="media/product-dropdown.png" alt="product"></a>
-                            </div>
-                            <div class="content">
-                                <div class="brand">Mocasines Pastoret</div>
-                                <div class="name">Leather Loafer with Penny Bar</div>
-                                <div class="variation">
-                                    <ul>
-                                        <li>Size: M</li>
-                                        <li>Color: Navy Blue</li>
-                                    </ul>
-                                </div>
-                                <div class="quan-price">
-                                    <div class="quantity">Quantity: 1</div>
-                                    <div class="price"><div class="off">$75.00</div><span class="currency">$</span>65.00</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sub-total-details">
-                        <ul>
-                            <li>
-                                <div class="label">Subtotal</div>
-                                <div class="cost"><span class="currency">S$</span>195.00</div>
-                            </li>
-                            <li>
-                                <div class="label">Savings</div>
-                                <div class="cost"><span class="currency">S$</span>15.00</div>
-                                <ul>
-                                    <li>
-                                        <div class="label"><span>- </span>Promo</div>
-                                        <div class="cost"><span class="currency">S$</span>10.00</div>
-                                    </li>
-                                    <li>
-                                        <div class="label"><span>- </span>Code (BHGTHEBEST)</div>
-                                        <div class="cost"><span class="currency">S$</span>5.00</div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="label">Member Points</div>
-                                <div class="cost"></div>
-                                <ul>
-                                    <li>
-                                        <div class="label"><span>- </span>Points Redeem (XX points) </div>
-                                        <div class="cost"><span class="currency">S$</span>20.00</div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sub-total">
-                        <ul>
-                            <li class="sub-total-item">
-                                <h4>Subtotal</h4>
-                                <div class="cost"><span class="currency">S$</span>160.00</div>
-                            </li>
-                            <li>
-                                <div class="promo-warning">Delivery Charge</div>
-                                <div class="cost"><span class="currency">S$</span>0.00</div>
-                            </li>
-                            <li class="small">Enjoy FREE delivery for this order!</li>
-                            <li>
-                                <div class="promo-warning">GST</div>
-                                <div class="cost"><span class="currency">S$</span>11.20</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="total">
-                        <ul>
-                            <li class="total-item">
-                                <h4>Order Total <span>(3 Items)</span></h4>
-                                <div class="cost"><span class="currency">S$</span>171.20</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="checkout">
-                        <a href="#" class="continue-shopping">Continue Shopping</a>
-                        <button class="checkout-btn btn">Checkout</button>
-                    </div>
-                </div>
-            </div>
-        </div>        
+        </div>
     </div>
 
 
     <!-- FOOTER -->
-    <footer id="main-footer" class="type-b">
+    <footer id="main-footer">
         <div class="container">
             <div class="left">
                 <a href="" class="logo"><img src="media/BHG_Online_Logo-01-removebg-preview-removebg-preview_410x.png"
@@ -1346,7 +1445,9 @@
     </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/price_range_script.js"></script>
     <script src="js/main.js"></script>
 </body>
 

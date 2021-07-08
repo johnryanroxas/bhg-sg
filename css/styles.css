@@ -3638,7 +3638,7 @@ strong {
   margin-top: 20px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
 }
 
