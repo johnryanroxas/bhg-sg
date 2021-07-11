@@ -2025,23 +2025,31 @@ strong {
 }
 .tabs .tabs-nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   list-style: none;
   padding: 0;
+  border-bottom: 1px solid #CBCBCB;
 }
+
 .tabs .tabs-nav ul li {
   margin: 0 40px;
+}
+.tabs .tabs-nav ul li:first-child {
+  margin-left: 0;
 }
 .tabs .tabs-nav ul li a {
   color: #000000;
   font-family: "roboto-mid";
   font-size: 18px;
   text-decoration: none;
+  padding-bottom: 20px;
+  display: block;
 }
-.tabs .tabs-nav ul li.active a,
-.tabs .tabs-nav ul li a:hover {
+.tabs .tabs-nav ul li.active a, .tabs .tabs-nav ul li a:hover {
   color: #ec008c;
+  border-bottom: 3px solid #EC008C;
 }
+
 .tabs .tabs-nav ul.type-b li.active a {
   color: #000000;
   font-family: "roboto-bold", sans-serif;
@@ -4326,22 +4334,6 @@ p.price {
   border-color: #ec008c;
 }
 
-#reviews-section.tabs-included .tabs .tabs-nav ul {
-  justify-content: left;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #cbcbcb;
-}
-
-#reviews-section.tabs-included .tabs .tabs-nav ul li {
-  margin: 0 70px 0 0;
-  border-bottom: 3px solid transparent;
-  padding-bottom: 20px;
-  margin-bottom: -20px;
-}
-
-#reviews-section.tabs-included .tabs .tabs-nav li.active {
-  border-bottom: 3px solid #ec008c;
-}
 
 #reviews-section.tabs-included .tabs .tabs-nav li,
 #reviews-section.tabs-included .tabs div {
@@ -4368,6 +4360,21 @@ p.price {
   margin-top: 20px;
   background: #F1F1F1;
   padding-bottom: 50px;
+}
+
+#reviews-section .head-wrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.head-wrap h2 {
+  width: 50%;
+}
+
+#reviews-section .filters {
+  width: 50%;
+  text-align: right;
 }
 
 #product-individual-page .pink-box.box {
@@ -5872,6 +5879,41 @@ span.add-on-block {
   padding: 5px;
 }
 
+.relative-div{
+  position: relative;
+}
+/**********************************/
+/******** SUB BANNER **************/
+/**********************************/
+.banner-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  max-width: 1346px;
+  margin: 0 auto;
+  width: 100%;
+  transform: translatex(-50%);
+  margin-left: 7%;
+}
+
+.banner-wrap {
+  width: 27%;
+  display: block;
+}
+
+.banner-content h1 {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 18px;
+}
+
+.membership-banner.sub-page_banner {
+  z-index: -1;
+}
 
 
 /**********************************/
@@ -5883,6 +5925,10 @@ span.add-on-block {
   }
   .wrapper-1364 {
     width: 1140px;    
+}
+.banner-content {
+  width: 1140px;
+  margin-left: 2%;
 }
 #checkout-page .wrapper-1364 .col-2-full{
   margin-top: 35px;
