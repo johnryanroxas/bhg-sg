@@ -71,6 +71,22 @@ $(function(){
     $(".q-input-num").inputFilter(function(value) {
         return /^\d*$/.test(value);
     });
+
+    // Homepage special-products
+    $('.items-slider .s-item').click(function(){
+        var x = $(this);
+        a = x.find('img').attr('src');
+        b = x.find('input[name="brand-name"]').val();
+        c = x.find('input[name="price"]').val();
+        d = x.find('input[name="off-price"]').val();
+        e = x.find('.s-title').text();
+
+        x.closest('.right').find('.item .img-holder img').attr('src',a);
+        x.closest('.right').find('.item .product-brand').text(b);
+        x.closest('.right').find('.item .product-name').text(e);
+        x.closest('.right').find('.item .price span:last-child').text(c);
+        x.closest('.right').find('.item .off-price span:last-child').text(d);
+    });
     
     //Increment and Decrement quantity
     $('.q-plus').on('click',function(){
@@ -316,6 +332,20 @@ $(function(){
 
     $('.product-details-btn button.btn, .featured-item-box button.btn').click(function () {
         $(this).toggleClass("btn-clicked");
+    });
+
+    $('#make-a-reservation').click(function(){
+        if($(this).is(':checked')) {
+            $(this).closest('#reservation').find('.reservation-pop').toggle();
+        } else {
+            $(this).closest('#reservation').find('.reservation-pop').hide();
+        }
+        
+    });
+
+    $('.reservation-pop .x-btn').click(function(e){
+        e.preventDefault();
+        $(this).closest('.reservation-pop').toggle();
     });
 
     // Checkout Page

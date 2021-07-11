@@ -3393,6 +3393,7 @@ strong {
   color: #ec008c;
   line-height: 0;
   line-height: 34px;
+  margin-right: 10px;
 }
 .special-products .wrapper .right .off-price {
   font-size: 19px;
@@ -3910,6 +3911,108 @@ strong {
 #product-individual-page .product-details {
   max-width: 470px;
 }
+
+#product-individual-page .reservation-pop {
+  width: 440px;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 0 6px 0px rgb(0 0 0 / 15%);
+  border-radius: 16px 16px 6px 6px;
+  position: absolute;
+  z-index: 999999;
+  bottom: -100px;
+  background: #FFFFFF;
+  display: none;
+}
+
+#product-individual-page .reservation-pop .fields-2 > div:first-child {
+  width: 54.5%;
+}
+#product-individual-page .reservation-pop .fields-2 > div:last-child {
+  width: 42.5%;
+  display: flex;
+  align-items: center;
+}
+
+#product-individual-page .reservation-pop .fields-2 div:last-child .f-select .lists {
+  display: none;
+}
+
+#product-individual-page .reservation-pop .fields-2 label {
+  margin-right: 10px;
+}
+
+#product-individual-page .reservation-pop input {
+  width: 100%;
+}
+
+#product-individual-page .reservation-pop .f-select {
+  border: 1px solid #9B9B9B;
+  border-radius: 5px;
+  background: #FFFFFF;
+  height: 45px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 100%;
+}
+
+#product-individual-page .reservation-pop .f-select span {
+  font-family: 'roboto-regular';
+}
+
+#product-individual-page .reservation-pop .f-select .selected {
+  padding: 0;
+}
+
+#product-individual-page .reservation-pop .f-select .lists {
+  width: 100%;
+}
+
+#product-individual-page .reservation-pop .close-wrap {
+  width: 100%;
+  display: block;
+  height: 27px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#product-individual-page .reservation-pop .close-wrap img {
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  cursor: pointer;
+}
+
+#product-individual-page .reservation-pop .btn,
+#product-individual-page .reservation-pop .add-cart-btn{
+  width: 100px;
+  height: 45px;
+}
+
+#product-individual-page .reservation-pop .actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#product-individual-page .reservation-pop .actions button {
+  margin-left: 20px;
+}
+
+#product-individual-page .reservation-pop .note {
+  display: flex;
+  justify-content: space-between;
+}
+
+#product-individual-page .reservation-pop .note p:first-child {
+  width: 12%;
+}
+
+#product-individual-page .reservation-pop .note p {
+  width: 86%;
+}
+
 h3.product-category {
   margin-bottom: 0;
   color: #7582a4;
@@ -4976,6 +5079,8 @@ p.price {
 
 #checkout-page .tabs .tabs-nav ul {
   justify-content: flex-start;
+  margin-bottom: 30px;
+  border: 0;
 }
 
 #checkout-page .tabs .tabs-nav ul li {
@@ -4991,6 +5096,7 @@ p.price {
 #checkout-page .tabs .tabs-nav ul li.active a, 
 #checkout-page .tabs .tabs-nav ul li a:hover {
   color: #EC008C;
+  border-bottom: 0;
 }
 
 #checkout-page .tabs .tabs-nav ul li.active,
@@ -5052,6 +5158,7 @@ p.price {
 #payment-page .tabs .tabs-nav ul {
   justify-content: flex-start;
   align-items: center;
+  border: 0;
 }
 
 #payment-page .tabs .tabs-nav ul li {
@@ -5069,6 +5176,19 @@ p.price {
 
 #payment-page .address-method .tabs-nav {
   margin-bottom: 30px;
+}
+
+#payment-page .payment-method .tabs .tabs-nav ul li.active a, 
+#payment-page .payment-method .tabs .tabs-nav ul li a:hover {
+  border: 0;
+}
+
+#payment-page .payment-method .tabs .tabs-nav ul li a {
+  padding-bottom: 0;
+}
+
+#payment-page .address-method .tabs .tabs-nav ul li a {
+  padding-bottom: 10px;
 }
 
 #payment-page .address-method .tabs .tabs-nav ul li.active a, 
@@ -6006,6 +6126,16 @@ span.add-on-block {
   }
   .main-header .main .actions {
     margin-top: 20px;
+  }
+  #payment-page {
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #individual-product-add-on-details {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 1901px) {
