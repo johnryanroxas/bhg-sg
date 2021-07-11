@@ -209,14 +209,20 @@ $(function(){
         e.preventDefault();
         var x = $(this),
             a = x.closest('.f-select'),
+            a1 = x.closest('.f-select.pruduct-size'),
             b = x.text(),
             c = a.find('.selected span').text();
+            d = x.html();
 
         a.find('.down').toggle();
         a.find('.up').toggle();
         a.find('.lists').toggle();
-        a.find('.selected span').text(b);
+        a.find('.selected span').text(b);        
+        a1.find('.selected .selected-wrap').empty();
+        a1.find('.selected .selected-wrap').html(d);
         a.toggleClass('active');
+
+        
     });
 
     // Custom Select Filter for Mobile

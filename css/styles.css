@@ -19,6 +19,11 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+.s-item.slick-slide a {
+  text-decoration: none;
+  color: #333;
+}
+
 .slick-list {
   position: relative;
 
@@ -3980,13 +3985,13 @@ button.buy-2 {
   width: 240px;
 }
 
-span.color-box {
+div.color-box, span.color-box {
   width: 24px;
   height: 24px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
-}
+} 
 
 .product-details .f-select span {
   font-family: "roboto", sans-serif;
@@ -4054,6 +4059,10 @@ button.btn.add-to-cart {
   width: 150px;
   height: 45px;
   margin-right: 0;
+}
+
+button.btn.add-to-cart:hover {
+  background-color: #A5ABAB;
 }
 
 .cart span {
@@ -5872,6 +5881,16 @@ span.add-on-block {
   .main-header .main {
     width: 1140px;
   }
+  .wrapper-1364 {
+    width: 1140px;    
+}
+#checkout-page .wrapper-1364 .col-2-full{
+  margin-top: 35px;
+  padding-left: 0;
+}
+#checkout-page.main-container.type-c .col-1 {
+  width: 0;
+}
   #home-promo {
     width: 1140px;
   }
