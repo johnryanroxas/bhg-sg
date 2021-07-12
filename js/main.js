@@ -53,8 +53,7 @@ $(function(){
     });
 
 
-    // Special Promo Slider Small
-    $('#product-individual-page .products').slick({
+    $('#product-individual-page div#similar-products-section .products').slick({
         arrows: false,
         autoplay: false,
         autoplaySpeed: 7000,
@@ -70,6 +69,7 @@ $(function(){
             }
         }],
     });
+
 
     // Quantity input to accept number only
     $.fn.inputFilter = function(inputFilter) {
@@ -198,6 +198,9 @@ $(function(){
         } else if (parent == 'special-promo-slider-wrapper') {
             var d = x.closest('.special-promo-slider-wrapper').find('.special-promo-slider');
             $(d).slick('slickNext');
+        } else if (parent == 'similar-prod-wrap') {
+            var e = x.closest('.similar-prod-wrap').find('.products');
+            $(e).slick('slickNext');
         } else {
             c = x.closest('.items-slider').find('.s-items');
             $(c).slick('slickNext');
@@ -215,6 +218,9 @@ $(function(){
         } else if (parent == 'special-promo-slider-wrapper') {
             var d = x.closest('.special-promo-slider-wrapper').find('.special-promo-slider');
             $(d).slick('slickPrev');
+        } else if (parent == 'similar-prod-wrap') {
+            var e = x.closest('.similar-prod-wrap').find('.products');
+            $(e).slick('slickPrev');
         } else {
             c = x.closest('.items-slider').find('.s-items');
             $(c).slick('slickPrev');
