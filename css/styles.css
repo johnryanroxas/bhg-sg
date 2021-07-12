@@ -2205,6 +2205,22 @@ strong {
   z-index: 998;
 }
 
+#home-page .feat-products.type-2 {
+  padding: 0 35px;
+}
+
+#home-page .news {
+  padding: 0 35px;
+}
+
+#home-page .tabs .tabs-nav ul.type-b li.active a::after {
+  display: none;
+}
+
+#home-page .tabs .tabs-content.type-b {
+  width: 100%;
+}
+
 .feat-products.type-2 .product-list .item {
   box-shadow: 0 0 6px 0px rgb(0 0 0 / 15%);
   border-radius: 16px 16px 6px 6px;
@@ -4188,6 +4204,10 @@ button.btn.add-to-cart:hover {
   margin-right: 43px;
 }
 
+.quantity-cart-wishlist-wrap div.cart {
+  padding-top: 20px;
+}
+
 .quantity-cart-wishlist-wrap .wishlist {
   margin-right: 0;
   display: flex;
@@ -6057,6 +6077,7 @@ span.add-on-block {
 #checkout-page.main-container.type-c .col-1 {
   width: 0;
 }
+
   #home-promo {
     width: 1140px;
   }
@@ -6136,6 +6157,12 @@ span.add-on-block {
     width: 1140px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #product-individual-page .wrapper-1364,
+  #reviews-section .wrapper-1364 {
+    width: 1140px;
+    padding: 0;
   }
 }
 @media (max-width: 1901px) {
@@ -6245,10 +6272,6 @@ span.add-on-block {
     width: 120px;
   }
 
-  #product-individual-page .wrapper-1364 {
-    padding: 0 35px;
-  }
-
   #product-individual-page .products .item .img-holder {
     width: 100%;
   }
@@ -6269,9 +6292,6 @@ span.add-on-block {
     width: 100%;
   }
 
-  #reviews-section .wrapper-1364 {  
-      padding: 0 35px;
-  }
   .main-header.type-b .bottom .offer-menu ul {
     margin: 0 auto;
   }
@@ -6317,10 +6337,6 @@ span.add-on-block {
     width: 120px;
   }
 
-  #product-individual-page .wrapper-1364 {
-    padding: 0 35px;
-  }
-
   #product-individual-page .products .item .img-holder {
     width: 100%;
   }
@@ -6344,9 +6360,6 @@ span.add-on-block {
     width: 100%;
   }
 
-  #reviews-section .wrapper-1364 {  
-      padding: 0 35px;
-  }
   .main-header.type-b .bottom .offer-menu ul {
     margin: 0 auto;
   }
@@ -6446,9 +6459,6 @@ span.add-on-block {
 }
 
 @media (max-width: 1200px) {
-  #reviews-section .wrapper-1364,#product-individual-page .wrapper-1364 {
-      padding: 0 15px;
-  }
   .f-filter-price .label {
     flex-direction: column;
     align-items: flex-start;
@@ -6929,9 +6939,7 @@ span.add-on-block {
 }
 
 @media (max-width: 1200px) {
-  #reviews-section .wrapper-1364,#product-individual-page .wrapper-1364 {
-      padding: 0 15px;
-  }
+
   .f-filter-price .label {
     flex-direction: column;
     align-items: flex-start;

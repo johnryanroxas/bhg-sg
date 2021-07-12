@@ -52,6 +52,25 @@ $(function(){
         }],
     });
 
+
+    // Special Promo Slider Small
+    $('#product-individual-page .products').slick({
+        arrows: false,
+        autoplay: false,
+        autoplaySpeed: 7000,
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }],
+    });
+
     // Quantity input to accept number only
     $.fn.inputFilter = function(inputFilter) {
         return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function() {
