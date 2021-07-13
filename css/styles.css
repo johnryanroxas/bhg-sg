@@ -6013,6 +6013,7 @@ p.price {
 .checkbox-addon-product {
   align-items: center;
   width: 413px;
+  margin-right: 10px;
 }
 .add-on-checkbox {
   margin-right: 20px;
@@ -6031,6 +6032,15 @@ p.price {
   display: block;
   width: 240px;
   margin-right: 10px;
+}
+
+.add-on-details {
+  width: 245px;
+}
+
+#individual-product-add-on-details .f-select.pruduct-size {
+  width: 190px;
+  height: 35px;
 }
 .add-on-box-wrap .detail-wraps {
   margin-top: 0;
@@ -6077,6 +6087,7 @@ span.add-on-block {
   color: #EC008C;
   border: 1px solid #EC008C;
   padding: 5px;
+  margin-top: 14px;
 }
 
 .relative-div{
