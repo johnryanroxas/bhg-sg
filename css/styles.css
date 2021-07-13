@@ -6809,6 +6809,9 @@ span.add-on-block {
 }
 
 @media (max-width: 767px) {
+  .wrapper-1364 {
+      width: 100%;
+  }
   #home-navigation {
     padding-left: 15px;
     padding-right: 15px;
@@ -7671,6 +7674,7 @@ span.wrap-title {
 
   #main-product-page .box {
     display: block;
+    width: 100%;
   }
   #main-product-page .sidebar {
     width: 100%;
@@ -7736,7 +7740,30 @@ span.wrap-title {
   #main-product-page .filter-for-mobile .f-select {
     width: 48%;
     overflow: hidden;
-    font-size: 14px;
+    font-size: 12px;
+    height: auto;
+  }
+
+  #main-product-page .filters-mobile-btn {
+    font-size: 12px;
+}
+
+  .f-select .selected, .f-select .lists {
+    padding: 0 8px; 
+  }
+
+  .f-select .selected .arrow, #main-product-page .filters-mobile-btn .arrow {
+    right: 5px;
+    width: 10px;
+  }
+
+  #main-product-page .filters-mobile-btn {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .f-select .selected, .f-select .lists {
+    line-height: 36px;
   }
 
   #main-product-page .filter-for-mobile .f-select.active {
@@ -7746,6 +7773,11 @@ span.wrap-title {
   #main-product-page .filter-for-mobile .f-select .lists {
     width: 100%;
   }
+
+  #main-product-page .filters-mobile-btn .arrow {
+    width: 10px;
+    height: auto;
+}
 
   #main-footer .container {
     padding-left: 20px;
