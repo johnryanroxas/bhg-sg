@@ -3931,6 +3931,9 @@ strong {
 /*****************************************/
 /******** PRODUCT INDIVIDUAL PAGE ********/
 /*****************************************/
+#product-individual-page .box.box-416 {
+  overflow-x: visible;
+}
 #product-individual-page .box.box-416,
 #reviews-section .box.box-416 {
   max-width: 1170px;
@@ -3960,7 +3963,7 @@ strong {
   border-radius: 16px 16px 6px 6px;
   position: absolute;
   z-index: 999999;
-  bottom: -100px;
+  bottom: 55px;
   background: #FFFFFF;
   display: none;
 }
@@ -4278,15 +4281,15 @@ button.btn.add-to-cart:hover {
 
 .pruduct-details-box {
   width: 335px;
-}
 
-.pruduct-details-box {
-  width: 335px;
   margin-right: 40px;
   border-right: 1px solid #707070;
   padding-right: 40px;
   max-height: 72px;
   height: 72px;
+  position: relative;
+  overflow: visible;
+  z-index: 999999;
 }
 
 .pruduct-details-box.last {
@@ -6043,7 +6046,8 @@ p.price {
 
 #individual-product-add-on-details .f-select.pruduct-size {
   width: 190px;
-  height: 35px;
+  height: auto;
+  line-height: 40px
 }
 .add-on-box-wrap .detail-wraps {
   margin-top: 0;
@@ -6134,6 +6138,10 @@ span.add-on-block {
 /******** MEDIA QUERIES ***********/
 /**********************************/
 @media (max-width: 1919px) {
+  .add-on-box-wrap .quantity-cart-wishlist-wrap {
+    margin-left: 0;
+    width: auto;
+}
   .main-header .main {
     width: 1140px;
   }
@@ -6399,7 +6407,7 @@ span.add-on-block {
     height: auto;
   }
 
-#product-individual-page .products .item {
+  #main-product-page .main .products .item, #product-individual-page .products .item {
     width: 96%;
   }
 
@@ -6467,7 +6475,7 @@ span.add-on-block {
     height: auto;
   }
 
-#product-individual-page .products .item {
+  #main-product-page .main .products .item, #product-individual-page .products .item {
     width: 96%;
   }
 
@@ -7064,7 +7072,9 @@ span.add-on-block {
   .box.box-416{
     overflow-x: hidden;
   } 
-
+  #product-individual-page .box.box-416 {
+    overflow-x: visible;
+}
   
 }
 
@@ -7362,6 +7372,35 @@ span.add-on-block {
   
 }
 
+@media (max-width: 1450px) {
+  #product-individual-page .reservation-pop {
+    left: -80px;
+  }
+  
+}
+
+@media (max-width: 1380px) {
+  #product-individual-page .reservation-pop {
+    left: calc(100% - 422px);
+  }
+  
+}
+
+@media (max-width: 1200px) {
+  #product-individual-page .reservation-pop {
+    left: calc(100% - 445px);
+  }
+  
+}
+
+@media (max-width: 1150px) {
+  #product-individual-page .reservation-pop {
+    right: 27px;
+    left: auto;
+  }
+  
+}
+
 @media (max-width: 840px) {
   .add-on-box-wrap {
     display: block;
@@ -7479,7 +7518,7 @@ span.add-on-block {
   text-decoration: none;
   font-weight: 700;
 }
-#product-individual-page .products .item {
+#main-product-page .main .products .item, #product-individual-page .products .item {
   width: 100%;
 }
 
