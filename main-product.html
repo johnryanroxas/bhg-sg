@@ -1127,7 +1127,7 @@
                             <div class="label">
                                 <button class="add-cart-btn type-b">Filter</button>
                                 <div class="price-label">
-                                    $<input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" /> <span>-$</span><input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field" />
+                                    $<div oninput="validity.valid||(value='0');" id="min_price" class="price-range-field"></div><span>-$</span><div oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field"></div>
                                 </div>
                             </div>
                         </div>
