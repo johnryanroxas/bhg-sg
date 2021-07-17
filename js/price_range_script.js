@@ -51,20 +51,20 @@ $(document).ready(function(){
 		min: 0,
 		max: 10000,
 		values: [0, 10000],
-		step: 100,
+		step: 50,
 
 		slide: function (event, ui) {
 		  if (ui.values[0] == ui.values[1]) {
 			  return false;
 		  }
 		  
-		  $("#min_price").val(ui.values[0]);
-		  $("#max_price").val(ui.values[1]);
+		  $("#min_price").text(ui.values[0]);
+		  $("#max_price").text(ui.values[1]);
 		}
 	  });
 
-	  $("#min_price").val($("#slider-range").slider("values", 0));
-	  $("#max_price").val($("#slider-range").slider("values", 1));
+	  $("#min_price").text($("#slider-range").slider("values", 0));
+	  $("#max_price").text($("#slider-range").slider("values", 1));
 
 	});
 
