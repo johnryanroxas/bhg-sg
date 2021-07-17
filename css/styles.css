@@ -5851,6 +5851,10 @@ p.price {
   text-align: center;
 }
 
+#promotion-page .tabs .tabs-nav ul {
+  justify-content: center;
+}
+
 #promotion-page .promotion-box {
   margin-top: 20px;
   box-sizing: border-box;
